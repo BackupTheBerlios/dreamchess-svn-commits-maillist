@@ -1,0 +1,29 @@
+From waltervn at berlios.de  Tue Jul 31 23:59:19 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 31 Jul 2007 23:59:19 +0200
+Subject: [dreamchess-svn-commits] r450 - in dreamchess/trunk: data
+	data/sounds src src/audio src/include
+Message-ID: <200707312159.l6VLxJ9k023215@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-07-31 23:58:30 +0200 (Tue, 31 Jul 2007)
+New Revision: 450
+
+Added:
+   dreamchess/trunk/data/sounds/
+   dreamchess/trunk/data/sounds/menu1.wav
+   dreamchess/trunk/data/sounds/menu2.wav
+   dreamchess/trunk/data/sounds/move1.wav
+Modified:
+   dreamchess/trunk/src/audio/sdlmixer.c
+   dreamchess/trunk/src/dreamchess.c
+   dreamchess/trunk/src/include/audio.h
+Log:
+	* data/sounds: Added (temporary?) sound effects.
+	* src/dreamchess.c, src/audio/sdlmixer.c, src/include/audio.h: Load
+	sound effects. Play sound when receiving move from engine.
+
+
+
+
+

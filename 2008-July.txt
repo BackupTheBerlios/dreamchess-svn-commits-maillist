@@ -1,0 +1,82 @@
+From waltervn at berlios.de  Wed Jul  2 04:34:18 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 2 Jul 2008 04:34:18 +0200
+Subject: [dreamchess-svn-commits] r622 - in
+	dreamchess/branches/0.3-experimental/src: . ui ui/include ui/title
+Message-ID: <200807020234.m622YIBg012788@sheep.berlios.de>
+
+Author: krismca
+Date: 2008-07-02 04:34:11 +0200 (Wed, 02 Jul 2008)
+New Revision: 622
+
+Added:
+   dreamchess/branches/0.3-experimental/src/ui/game.cpp
+   dreamchess/branches/0.3-experimental/src/ui/include/game.h
+Modified:
+   dreamchess/branches/0.3-experimental/src/main.cpp
+   dreamchess/branches/0.3-experimental/src/ui/Makefile.am
+   dreamchess/branches/0.3-experimental/src/ui/include/title.h
+   dreamchess/branches/0.3-experimental/src/ui/screen.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title_camera.cpp
+Log:
+	* Imprived game timing. Created 'game' class to manage things.
+
+
+
+
+
+From waltervn at berlios.de  Mon Jul 28 01:03:40 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 28 Jul 2008 01:03:40 +0200
+Subject: [dreamchess-svn-commits] r623 - in dreamchess/trunk/src: . dreamer
+	include libs
+Message-ID: <200807272303.m6RN3eLB008872@sheep.berlios.de>
+
+Author: waltervn
+Date: 2008-07-28 01:03:26 +0200 (Mon, 28 Jul 2008)
+New Revision: 623
+
+Modified:
+   dreamchess/trunk/src/comm_win32.c
+   dreamchess/trunk/src/dreamer/commands.c
+   dreamchess/trunk/src/dreamer/dreamer.c
+   dreamchess/trunk/src/dreamer/e_comm_win32.c
+   dreamchess/trunk/src/dreamer/move.c
+   dreamchess/trunk/src/dreamer/move.h
+   dreamchess/trunk/src/dreamer/search.c
+   dreamchess/trunk/src/include/pipe_win32.h
+   dreamchess/trunk/src/libs/msgbuf.c
+   dreamchess/trunk/src/libs/pipe_win32.c
+Log:
+	* src/dreamer/commands.c, src/dreamer/search.c, src/dreamer/move.c,
+	src/dreamer/move.h, src/dreamer/dreamer.c: Do not send RESIGN_MOVE
+	and similar move constants to the GUI.
+
+	* src/include/pipe_win32.h, src/libs/pipe_win32.c, src/comm_win32.c,
+	src/dreamer/e_comm_win32.c: Added support for win32 cmd.
+	* src/libs/msgbuf.c: Chop off carriage returns.
+
+
+
+
+
+From waltervn at berlios.de  Tue Jul 29 12:27:59 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 29 Jul 2008 12:27:59 +0200
+Subject: [dreamchess-svn-commits] r624 - dreamchess/trunk/src/dreamer
+Message-ID: <200807291027.m6TARxQ6000238@sheep.berlios.de>
+
+Author: waltervn
+Date: 2008-07-29 12:27:56 +0200 (Tue, 29 Jul 2008)
+New Revision: 624
+
+Modified:
+   dreamchess/trunk/src/dreamer/commands.c
+Log:
+	* src/dreamer/commands.c: Set feature colors=0.
+
+
+
+
+

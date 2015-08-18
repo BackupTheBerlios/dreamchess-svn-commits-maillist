@@ -1,0 +1,62 @@
+From waltervn at berlios.de  Wed Jun 27 00:42:49 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 27 Jun 2007 00:42:49 +0200
+Subject: [dreamchess-svn-commits] r448 - / music music/data
+	music/data/matt_smith
+Message-ID: <200706262242.l5QMgnc1027733@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-06-27 00:31:37 +0200 (Wed, 27 Jun 2007)
+New Revision: 448
+
+Added:
+   music/
+   music/data/
+   music/data/matt_smith/
+   music/data/matt_smith/Matt_Smith_-_Algorythm_Vision.mp3
+   music/data/matt_smith/Matt_Smith_-_Ascension_(Remix).mp3
+   music/data/matt_smith/Matt_Smith_-_Call_Of_Nocturnal_Goat_Sucker.mp3
+   music/data/matt_smith/Matt_Smith_-_Calm_And_Glistening.mp3
+   music/data/matt_smith/Matt_Smith_-_Confused.mp3
+   music/data/matt_smith/Matt_Smith_-_House_Flies_In_Disguise.mp3
+   music/data/matt_smith/Matt_Smith_-_Iniquitous.mp3
+   music/data/matt_smith/Matt_Smith_-_Liquefaction.mp3
+   music/data/matt_smith/Matt_Smith_-_Nuclear_Winter.mp3
+   music/data/matt_smith/Matt_Smith_-_Radiance.mp3
+   music/data/matt_smith/Matt_Smith_-_Red_Light_District.mp3
+   music/data/matt_smith/Matt_Smith_-_Solitude.mp3
+   music/data/matt_smith/Matt_Smith_and_Eric_Lee_-_Transcendence.mp3
+   music/data/matt_smith/tracks.xml
+Log:
+	* Added music by Matt Smith.
+
+
+
+
+
+From waltervn at berlios.de  Wed Jun 27 21:24:26 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 27 Jun 2007 21:24:26 +0200
+Subject: [dreamchess-svn-commits] r449 - in music: . trunk
+Message-ID: <200706271924.l5RJOQD1028113@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-06-27 21:24:25 +0200 (Wed, 27 Jun 2007)
+New Revision: 449
+
+Added:
+   music/branches/
+   music/tags/
+   music/trunk/
+   music/trunk/data/
+Removed:
+   music/data/
+Log:
+	* Created trunk, branches and tags directories.
+
+	* Moved music data into trunk.
+
+
+
+
+

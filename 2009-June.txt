@@ -1,0 +1,80 @@
+From waltervn at berlios.de  Mon Jun 15 14:36:53 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 15 Jun 2009 14:36:53 +0200
+Subject: [dreamchess-svn-commits] r685 - in
+	dreamchess/branches/0.3-experimental: data/scripts src
+	src/libs src/libs/engine src/libs/md3
+Message-ID: <200906151236.n5FCarAl002072@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-06-15 14:36:32 +0200 (Mon, 15 Jun 2009)
+New Revision: 685
+
+Added:
+   dreamchess/branches/0.3-experimental/src/libs/md3/
+   dreamchess/branches/0.3-experimental/src/libs/md3/Makefile.am
+   dreamchess/branches/0.3-experimental/src/libs/md3/convert.cpp
+   dreamchess/branches/0.3-experimental/src/libs/md3/convert.h
+   dreamchess/branches/0.3-experimental/src/libs/md3/inttypes.h
+   dreamchess/branches/0.3-experimental/src/libs/md3/loader.cpp
+   dreamchess/branches/0.3-experimental/src/libs/md3/loader.h
+   dreamchess/branches/0.3-experimental/src/libs/md3/mesh.h
+   dreamchess/branches/0.3-experimental/src/libs/md3/structure.h
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/title.lua
+   dreamchess/branches/0.3-experimental/src/Makefile.am
+   dreamchess/branches/0.3-experimental/src/libs/engine/Makefile.am
+   dreamchess/branches/0.3-experimental/src/libs/engine/engine.i
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.cpp
+Log:
+	* Initial MD3 model support.
+
+
+
+
+
+From waltervn at berlios.de  Tue Jun 16 19:47:42 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 16 Jun 2009 19:47:42 +0200
+Subject: [dreamchess-svn-commits] r686 -
+	dreamchess/branches/0.3-experimental/src/libs/engine
+Message-ID: <200906161747.n5GHlgpH031678@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-06-16 19:47:39 +0200 (Tue, 16 Jun 2009)
+New Revision: 686
+
+Added:
+   dreamchess/branches/0.3-experimental/src/libs/engine/dcm.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/dcm.h
+   dreamchess/branches/0.3-experimental/src/libs/engine/md3.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/md3.h
+Log:
+	* Forgot a few files in previous commit.
+
+
+
+
+
+From waltervn at berlios.de  Tue Jun 16 19:52:07 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 16 Jun 2009 19:52:07 +0200
+Subject: [dreamchess-svn-commits] r687 - in
+	dreamchess/branches/0.3-experimental: . src src/libs
+Message-ID: <200906161752.n5GHq7O4032524@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-06-16 19:52:04 +0200 (Tue, 16 Jun 2009)
+New Revision: 687
+
+Modified:
+   dreamchess/branches/0.3-experimental/configure.ac
+   dreamchess/branches/0.3-experimental/src/Makefile.am
+   dreamchess/branches/0.3-experimental/src/libs/Makefile.am
+Log:
+Fix build
+
+
+
+
+

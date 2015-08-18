@@ -1,0 +1,78 @@
+From waltervn at berlios.de  Mon Nov  1 16:08:31 2010
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon,  1 Nov 2010 16:08:31 +0100 (CET)
+Subject: [dreamchess-svn-commits] r696 - dreamchess/trunk
+Message-ID: <20101101150831.BAA4E481115@sheep.berlios.de>
+
+Author: waltervn
+Date: 2010-11-01 16:08:31 +0100 (Mon, 01 Nov 2010)
+New Revision: 696
+
+Modified:
+   dreamchess/trunk/configure.ac
+Log:
+	* Fix autoconf warnings
+
+
+
+
+
+From waltervn at berlios.de  Mon Nov  1 17:03:06 2010
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon,  1 Nov 2010 17:03:06 +0100 (CET)
+Subject: [dreamchess-svn-commits] r697 - dreamchess/trunk/src/include/gamegui
+Message-ID: <20101101160306.3F4E5481115@sheep.berlios.de>
+
+Author: waltervn
+Date: 2010-11-01 17:03:05 +0100 (Mon, 01 Nov 2010)
+New Revision: 697
+
+Added:
+   dreamchess/trunk/src/include/gamegui/scrollbarv.h
+Log:
+	* Add missing scrollbarv.h file (thanks to David Bitseff).
+
+
+
+
+
+From waltervn at berlios.de  Tue Nov  2 00:56:01 2010
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue,  2 Nov 2010 00:56:01 +0100 (CET)
+Subject: [dreamchess-svn-commits] r698 - in dreamchess/trunk/src: . dreamer
+	gamegui_dialogs include/gamegui libs/gamegui ui_sdlgl
+Message-ID: <20101101235602.E3E8E481117@sheep.berlios.de>
+
+Author: waltervn
+Date: 2010-11-02 00:56:01 +0100 (Tue, 02 Nov 2010)
+New Revision: 698
+
+Modified:
+   dreamchess/trunk/src/dir.c
+   dreamchess/trunk/src/dreamchess.c
+   dreamchess/trunk/src/dreamer/commands.c
+   dreamchess/trunk/src/dreamer/history.c
+   dreamchess/trunk/src/dreamer/main.c
+   dreamchess/trunk/src/dreamer/makebook.c
+   dreamchess/trunk/src/dreamer/makebook.h
+   dreamchess/trunk/src/dreamer/move.c
+   dreamchess/trunk/src/dreamer/pgn_scanner.l
+   dreamchess/trunk/src/dreamer/transposition.c
+   dreamchess/trunk/src/gamegui_dialogs/chat.c
+   dreamchess/trunk/src/gamegui_dialogs/time.c
+   dreamchess/trunk/src/include/gamegui/edit.h
+   dreamchess/trunk/src/include/gamegui/scrollbarv.h
+   dreamchess/trunk/src/libs/gamegui/dialog.c
+   dreamchess/trunk/src/libs/gamegui/edit.c
+   dreamchess/trunk/src/libs/gamegui/scrollbarv.c
+   dreamchess/trunk/src/pgn_scanner.l
+   dreamchess/trunk/src/ui.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.h
+Log:
+	* Fix gcc warnings
+
+
+
+
+

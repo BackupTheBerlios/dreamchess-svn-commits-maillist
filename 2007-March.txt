@@ -1,0 +1,171 @@
+From waltervn at berlios.de  Sun Mar 25 13:01:52 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 25 Mar 2007 13:01:52 +0200
+Subject: [dreamchess-svn-commits] r441 - dreamchess/branches
+Message-ID: <200703251101.l2PB1qIj004644@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-03-25 13:01:51 +0200 (Sun, 25 Mar 2007)
+New Revision: 441
+
+Added:
+   dreamchess/branches/0.1-goat/
+Log:
+	* Created branch for GOAT disc.
+
+
+
+
+
+From waltervn at berlios.de  Sun Mar 25 13:48:17 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 25 Mar 2007 13:48:17 +0200
+Subject: [dreamchess-svn-commits] r442 - in dreamchess/branches/0.1-goat: .
+	src/libs src/libs/menu
+Message-ID: <200703251148.l2PBmHtO004357@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-03-25 13:48:16 +0200 (Sun, 25 Mar 2007)
+New Revision: 442
+
+Added:
+   dreamchess/branches/0.1-goat/src/libs/menu/
+   dreamchess/branches/0.1-goat/src/libs/menu/50hz.c
+   dreamchess/branches/0.1-goat/src/libs/menu/Makefile.am
+   dreamchess/branches/0.1-goat/src/libs/menu/code.c
+   dreamchess/branches/0.1-goat/src/libs/menu/config.c
+   dreamchess/branches/0.1-goat/src/libs/menu/exit.c
+   dreamchess/branches/0.1-goat/src/libs/menu/libmenu.c
+   dreamchess/branches/0.1-goat/src/libs/menu/libmenuint.h
+   dreamchess/branches/0.1-goat/src/libs/menu/score_table_c.c
+Modified:
+   dreamchess/branches/0.1-goat/configure.ac
+   dreamchess/branches/0.1-goat/src/libs/Makefile.am
+Log:
+	* src/libs/menu, src/libs/Makefile.am, configure.ac: Added libmenu.
+
+
+
+
+
+From waltervn at berlios.de  Sun Mar 25 20:10:21 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 25 Mar 2007 20:10:21 +0200
+Subject: [dreamchess-svn-commits] r443 - in dreamchess/branches/0.1-goat: .
+	pkg pkg/dc-goat src src/include src/libs/menu
+Message-ID: <200703251810.l2PIALAF010295@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-03-25 20:10:21 +0200 (Sun, 25 Mar 2007)
+New Revision: 443
+
+Added:
+   dreamchess/branches/0.1-goat/pkg/dc-goat/
+   dreamchess/branches/0.1-goat/pkg/dc-goat/goatmenu.cfg
+Modified:
+   dreamchess/branches/0.1-goat/configure.ac
+   dreamchess/branches/0.1-goat/pkg/Makefile.am
+   dreamchess/branches/0.1-goat/src/dreamchess.c
+   dreamchess/branches/0.1-goat/src/include/Makefile.am
+   dreamchess/branches/0.1-goat/src/libs/menu/Makefile.am
+Log:
+	* pkg/Makefile.am, pkg/dc-goat/goatmenu.cfg: Added GOAT config file.
+
+	* src/dreamchess.c: Call GOAT init and exit functions.
+
+	* src/include/Makefile.am, src/libs/menu/Makefile.am, configure.ac:
+	Updated.
+
+
+
+
+
+From waltervn at berlios.de  Tue Mar 27 00:04:36 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 27 Mar 2007 00:04:36 +0200
+Subject: [dreamchess-svn-commits] r444 - in
+	dreamchess/branches/0.1-goat/src: . dreamer ui_sdlgl
+Message-ID: <200703262204.l2QM4asb009240@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-03-27 00:04:35 +0200 (Tue, 27 Mar 2007)
+New Revision: 444
+
+Modified:
+   dreamchess/branches/0.1-goat/src/credits.c
+   dreamchess/branches/0.1-goat/src/dreamchess.c
+   dreamchess/branches/0.1-goat/src/dreamchess.h
+   dreamchess/branches/0.1-goat/src/dreamer/commands.c
+   dreamchess/branches/0.1-goat/src/dreamer/dreamer.c
+   dreamchess/branches/0.1-goat/src/dreamer/dreamer.h
+   dreamchess/branches/0.1-goat/src/dreamer/search.c
+   dreamchess/branches/0.1-goat/src/ui_sdlgl/saveload_dialog.c
+   dreamchess/branches/0.1-goat/src/ui_sdlgl/theme.c
+   dreamchess/branches/0.1-goat/src/ui_sdlgl/title_dialog.c
+   dreamchess/branches/0.1-goat/src/ui_sdlgl/ui_sdlgl.h
+   dreamchess/branches/0.1-goat/src/ui_sdlgl/xmlsavefile.c
+Log:
+	* Backported most of patch 437:438.
+
+
+
+
+
+From waltervn at berlios.de  Tue Mar 27 23:11:14 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 27 Mar 2007 23:11:14 +0200
+Subject: [dreamchess-svn-commits] r445 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200703272111.l2RLBE7W017529@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-03-27 23:11:12 +0200 (Tue, 27 Mar 2007)
+New Revision: 445
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/saveload_dialog.c
+Log:
+	* src/ui_sdlgl/saveload_dialog.c: Added difficulty to dialog.
+
+
+
+
+
+From waltervn at berlios.de  Tue Mar 27 23:15:22 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 27 Mar 2007 23:15:22 +0200
+Subject: [dreamchess-svn-commits] r446 -
+	dreamchess/branches/0.1-goat/src/ui_sdlgl
+Message-ID: <200703272115.l2RLFMNm017752@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-03-27 23:15:21 +0200 (Tue, 27 Mar 2007)
+New Revision: 446
+
+Modified:
+   dreamchess/branches/0.1-goat/src/ui_sdlgl/saveload_dialog.c
+Log:
+	* Applied patch 444:445.
+
+
+
+
+
+From waltervn at berlios.de  Tue Mar 27 23:21:14 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 27 Mar 2007 23:21:14 +0200
+Subject: [dreamchess-svn-commits] r447 - dreamchess/branches/0.1-goat/src
+Message-ID: <200703272121.l2RLLEkw018028@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-03-27 23:21:13 +0200 (Tue, 27 Mar 2007)
+New Revision: 447
+
+Modified:
+   dreamchess/branches/0.1-goat/src/credits.c
+Log:
+	* src/credits.c: Bumped year in copyright notice.
+
+
+
+
+

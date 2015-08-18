@@ -1,0 +1,92 @@
+From waltervn at berlios.de  Tue Mar  4 05:21:20 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 4 Mar 2008 05:21:20 +0100
+Subject: [dreamchess-svn-commits] r616 - in
+	dreamchess/branches/0.3-experimental/src/ui: . include title
+Message-ID: <200803040421.m244LKNN017767@sheep.berlios.de>
+
+Author: krismca
+Date: 2008-03-04 05:21:13 +0100 (Tue, 04 Mar 2008)
+New Revision: 616
+
+Added:
+   dreamchess/branches/0.3-experimental/src/ui/box.cpp
+   dreamchess/branches/0.3-experimental/src/ui/chess_board.cpp
+   dreamchess/branches/0.3-experimental/src/ui/include/box.h
+   dreamchess/branches/0.3-experimental/src/ui/include/chess_board.h
+   dreamchess/branches/0.3-experimental/src/ui/include/light.h
+   dreamchess/branches/0.3-experimental/src/ui/light.cpp
+Modified:
+   dreamchess/branches/0.3-experimental/src/ui/Makefile.am
+   dreamchess/branches/0.3-experimental/src/ui/include/texture.h
+   dreamchess/branches/0.3-experimental/src/ui/model.cpp
+   dreamchess/branches/0.3-experimental/src/ui/scene.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title.cpp
+Log:
+	* Box object. Title screen additions.
+
+
+
+
+
+From waltervn at berlios.de  Tue Mar  4 10:05:43 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 4 Mar 2008 10:05:43 +0100
+Subject: [dreamchess-svn-commits] r617 - in
+	dreamchess/branches/0.3-experimental/src/ui: . include title
+Message-ID: <200803040905.m2495hU6029786@sheep.berlios.de>
+
+Author: krismca
+Date: 2008-03-04 10:05:34 +0100 (Tue, 04 Mar 2008)
+New Revision: 617
+
+Modified:
+   dreamchess/branches/0.3-experimental/src/ui/camera.cpp
+   dreamchess/branches/0.3-experimental/src/ui/entity.cpp
+   dreamchess/branches/0.3-experimental/src/ui/include/camera.h
+   dreamchess/branches/0.3-experimental/src/ui/include/entity.h
+   dreamchess/branches/0.3-experimental/src/ui/include/light.h
+   dreamchess/branches/0.3-experimental/src/ui/include/scene.h
+   dreamchess/branches/0.3-experimental/src/ui/light.cpp
+   dreamchess/branches/0.3-experimental/src/ui/model.cpp
+   dreamchess/branches/0.3-experimental/src/ui/scene.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title.cpp
+Log:
+	* Added lights.
+
+
+
+
+
+From waltervn at berlios.de  Thu Mar  6 00:55:46 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 6 Mar 2008 00:55:46 +0100
+Subject: [dreamchess-svn-commits] r618 - in
+	dreamchess/branches/0.3-experimental/src/ui: . include title
+Message-ID: <200803052355.m25NtkiB025793@sheep.berlios.de>
+
+Author: krismca
+Date: 2008-03-06 00:55:38 +0100 (Thu, 06 Mar 2008)
+New Revision: 618
+
+Added:
+   dreamchess/branches/0.3-experimental/src/ui/title/title_camera.cpp
+Modified:
+   dreamchess/branches/0.3-experimental/src/ui/Makefile.am
+   dreamchess/branches/0.3-experimental/src/ui/camera.cpp
+   dreamchess/branches/0.3-experimental/src/ui/chess_board.cpp
+   dreamchess/branches/0.3-experimental/src/ui/include/box.h
+   dreamchess/branches/0.3-experimental/src/ui/include/camera.h
+   dreamchess/branches/0.3-experimental/src/ui/include/mesh.h
+   dreamchess/branches/0.3-experimental/src/ui/include/model.h
+   dreamchess/branches/0.3-experimental/src/ui/include/scene.h
+   dreamchess/branches/0.3-experimental/src/ui/include/title.h
+   dreamchess/branches/0.3-experimental/src/ui/scene.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title.cpp
+Log:
+	* Added camera target. chess board entity.
+
+
+
+
+

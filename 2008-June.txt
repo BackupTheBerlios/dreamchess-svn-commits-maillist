@@ -1,0 +1,25 @@
+From waltervn at berlios.de  Thu Jun 26 17:43:14 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 26 Jun 2008 17:43:14 +0200
+Subject: [dreamchess-svn-commits] r621 - in
+	dreamchess/branches/0.3-experimental: . src/ui src/ui/include
+	src/ui/title
+Message-ID: <200806261543.m5QFhEIQ031188@sheep.berlios.de>
+
+Author: krismca
+Date: 2008-06-26 17:42:44 +0200 (Thu, 26 Jun 2008)
+New Revision: 621
+
+Modified:
+   dreamchess/branches/0.3-experimental/configure.ac
+   dreamchess/branches/0.3-experimental/src/ui/include/title.h
+   dreamchess/branches/0.3-experimental/src/ui/screen.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title_camera.cpp
+Log:
+	* FPS counter, logic timing/counter.
+
+
+
+
+

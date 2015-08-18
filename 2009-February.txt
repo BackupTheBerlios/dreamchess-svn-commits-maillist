@@ -1,0 +1,837 @@
+From waltervn at berlios.de  Sun Feb  1 00:14:08 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 1 Feb 2009 00:14:08 +0100
+Subject: [dreamchess-svn-commits] r651 - in
+	dreamchess/branches/0.3-experimental/src/ui: . game include title
+Message-ID: <200901312314.n0VNE8SV005581@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-02-01 00:14:01 +0100 (Sun, 01 Feb 2009)
+New Revision: 651
+
+Modified:
+   dreamchess/branches/0.3-experimental/src/ui/entity.cpp
+   dreamchess/branches/0.3-experimental/src/ui/game/game.cpp
+   dreamchess/branches/0.3-experimental/src/ui/include/entity.h
+   dreamchess/branches/0.3-experimental/src/ui/include/input.h
+   dreamchess/branches/0.3-experimental/src/ui/include/resource.h
+   dreamchess/branches/0.3-experimental/src/ui/include/scene.h
+   dreamchess/branches/0.3-experimental/src/ui/include/screen.h
+   dreamchess/branches/0.3-experimental/src/ui/input.cpp
+   dreamchess/branches/0.3-experimental/src/ui/resource.cpp
+   dreamchess/branches/0.3-experimental/src/ui/scene.cpp
+   dreamchess/branches/0.3-experimental/src/ui/screen.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title_camera.cpp
+Log:
+	* Check mouse position before rendering moving pieces. Grab and drop.
+
+
+
+
+
+From waltervn at berlios.de  Mon Feb  2 15:27:57 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 2 Feb 2009 15:27:57 +0100
+Subject: [dreamchess-svn-commits] r652 - in
+	dreamchess/branches/0.3-experimental: . src src/ui
+Message-ID: <200902021427.n12ERvHT022341@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-02 15:27:55 +0100 (Mon, 02 Feb 2009)
+New Revision: 652
+
+Modified:
+   dreamchess/branches/0.3-experimental/configure.ac
+   dreamchess/branches/0.3-experimental/src/Makefile.am
+   dreamchess/branches/0.3-experimental/src/ui/Makefile.am
+Log:
+	* Added configure check for Lua.
+
+
+
+
+
+From waltervn at berlios.de  Mon Feb  2 17:39:24 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 2 Feb 2009 17:39:24 +0100
+Subject: [dreamchess-svn-commits] r653 - in
+	dreamchess/branches/0.3-experimental: . m4
+Message-ID: <200902021639.n12GdOCF003064@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-02 17:39:22 +0100 (Mon, 02 Feb 2009)
+New Revision: 653
+
+Added:
+   dreamchess/branches/0.3-experimental/m4/ac_pkg_swig.m4
+   dreamchess/branches/0.3-experimental/m4/swig_enable_cxx.m4
+Modified:
+   dreamchess/branches/0.3-experimental/configure.ac
+   dreamchess/branches/0.3-experimental/m4/Makefile.am
+Log:
+	* Added autoconf check for swig
+
+
+
+
+
+From waltervn at berlios.de  Mon Feb  2 20:48:16 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 2 Feb 2009 20:48:16 +0100
+Subject: [dreamchess-svn-commits] r654 - dreamchess/branches/0.3-experimental
+Message-ID: <200902021948.n12JmG2i006454@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-02 20:48:14 +0100 (Mon, 02 Feb 2009)
+New Revision: 654
+
+Modified:
+   dreamchess/branches/0.3-experimental/configure.ac
+Log:
+	* Fix for autoconf cache-id warnings.
+
+
+
+
+
+From waltervn at berlios.de  Wed Feb  4 00:52:13 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 4 Feb 2009 00:52:13 +0100
+Subject: [dreamchess-svn-commits] r655 - in
+	dreamchess/branches/0.3-experimental/src/ui: . game include title
+Message-ID: <200902032352.n13NqDs1014635@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-02-04 00:51:56 +0100 (Wed, 04 Feb 2009)
+New Revision: 655
+
+Added:
+   dreamchess/branches/0.3-experimental/src/ui/entity_group.cpp
+   dreamchess/branches/0.3-experimental/src/ui/include/entity_group.h
+Removed:
+   dreamchess/branches/0.3-experimental/src/ui/chess_board.cpp
+   dreamchess/branches/0.3-experimental/src/ui/include/chess_board.h
+Modified:
+   dreamchess/branches/0.3-experimental/src/ui/Makefile.am
+   dreamchess/branches/0.3-experimental/src/ui/entity.cpp
+   dreamchess/branches/0.3-experimental/src/ui/game/game.cpp
+   dreamchess/branches/0.3-experimental/src/ui/script.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title.cpp
+Log:
+	* Scripting, entity group class. 
+
+
+
+
+
+From waltervn at berlios.de  Wed Feb  4 01:09:51 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 4 Feb 2009 01:09:51 +0100
+Subject: [dreamchess-svn-commits] r656 - in
+	dreamchess/branches/0.3-experimental/src/ui: . game
+Message-ID: <200902040009.n1409pi9004681@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-02-04 01:09:48 +0100 (Wed, 04 Feb 2009)
+New Revision: 656
+
+Modified:
+   dreamchess/branches/0.3-experimental/src/ui/game/game.cpp
+   dreamchess/branches/0.3-experimental/src/ui/model.cpp
+Log:
+	* Game scene 'playable'.
+
+
+
+
+
+From waltervn at berlios.de  Wed Feb  4 01:33:00 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 4 Feb 2009 01:33:00 +0100
+Subject: [dreamchess-svn-commits] r657 - dreamchess/branches/0.3-experimental
+Message-ID: <200902040033.n140X0tq021087@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-04 01:32:59 +0100 (Wed, 04 Feb 2009)
+New Revision: 657
+
+Modified:
+   dreamchess/branches/0.3-experimental/Makefile.am
+Log:
+	* Restored Makefile.am.
+
+
+
+
+
+From waltervn at berlios.de  Wed Feb  4 04:48:26 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 4 Feb 2009 04:48:26 +0100
+Subject: [dreamchess-svn-commits] r658 - in
+	dreamchess/branches/0.3-experimental: data/scripts src/ui
+Message-ID: <200902040348.n143mQtV008744@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-04 04:48:23 +0100 (Wed, 04 Feb 2009)
+New Revision: 658
+
+Added:
+   dreamchess/branches/0.3-experimental/data/scripts/luatest.lua
+   dreamchess/branches/0.3-experimental/src/ui/luatest.cpp
+   dreamchess/branches/0.3-experimental/src/ui/luatest.h
+   dreamchess/branches/0.3-experimental/src/ui/luatest.i
+Modified:
+   dreamchess/branches/0.3-experimental/src/ui/Makefile.am
+   dreamchess/branches/0.3-experimental/src/ui/entity.cpp
+   dreamchess/branches/0.3-experimental/src/ui/script.cpp
+Log:
+	* Added some temporary SWIG testing code.
+
+
+
+
+
+From waltervn at berlios.de  Wed Feb  4 15:50:50 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 4 Feb 2009 15:50:50 +0100
+Subject: [dreamchess-svn-commits] r659 - dreamchess/branches/0.3-experimental
+Message-ID: <200902041450.n14EooBb015315@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-04 15:50:49 +0100 (Wed, 04 Feb 2009)
+New Revision: 659
+
+Modified:
+   dreamchess/branches/0.3-experimental/configure.ac
+Log:
+	* Require SWIG 1.3.32 for OS X.
+
+
+
+
+
+From waltervn at berlios.de  Wed Feb  4 17:25:55 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 4 Feb 2009 17:25:55 +0100
+Subject: [dreamchess-svn-commits] r660 -
+	dreamchess/branches/0.3-experimental/m4
+Message-ID: <200902041625.n14GPtH7023441@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-04 17:25:54 +0100 (Wed, 04 Feb 2009)
+New Revision: 660
+
+Added:
+   dreamchess/branches/0.3-experimental/m4/pkg.m4
+Modified:
+   dreamchess/branches/0.3-experimental/m4/Makefile.am
+Log:
+	* Added pkg-config m4 macros.
+
+
+
+
+
+From waltervn at berlios.de  Thu Feb  5 02:47:40 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 5 Feb 2009 02:47:40 +0100
+Subject: [dreamchess-svn-commits] r661 - in
+	dreamchess/branches/0.3-experimental: . src src/libs src/libs/engine
+Message-ID: <200902050147.n151lebs007577@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-05 02:47:34 +0100 (Thu, 05 Feb 2009)
+New Revision: 661
+
+Added:
+   dreamchess/branches/0.3-experimental/src/libs/engine/
+   dreamchess/branches/0.3-experimental/src/libs/engine/engine.i
+   dreamchess/branches/0.3-experimental/src/libs/engine/xml.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/xml.h
+Modified:
+   dreamchess/branches/0.3-experimental/configure.ac
+   dreamchess/branches/0.3-experimental/src/Makefile.am
+   dreamchess/branches/0.3-experimental/src/debug.c
+   dreamchess/branches/0.3-experimental/src/debug.h
+   dreamchess/branches/0.3-experimental/src/libs/Makefile.am
+   dreamchess/branches/0.3-experimental/src/main.cpp
+Log:
+	* Start of conversion of configuration management to Lua.
+
+
+
+
+
+From waltervn at berlios.de  Thu Feb  5 02:49:22 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 5 Feb 2009 02:49:22 +0100
+Subject: [dreamchess-svn-commits] r662 -
+	dreamchess/branches/0.3-experimental/src/libs/engine
+Message-ID: <200902050149.n151nMYx007909@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-05 02:49:21 +0100 (Thu, 05 Feb 2009)
+New Revision: 662
+
+Added:
+   dreamchess/branches/0.3-experimental/src/libs/engine/Makefile.am
+Log:
+	* Added missing file.
+
+
+
+
+
+From waltervn at berlios.de  Thu Feb  5 02:52:36 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 5 Feb 2009 02:52:36 +0100
+Subject: [dreamchess-svn-commits] r663 -
+	dreamchess/branches/0.3-experimental/src/libs/engine
+Message-ID: <200902050152.n151qaQJ008373@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-05 02:52:36 +0100 (Thu, 05 Feb 2009)
+New Revision: 663
+
+Added:
+   dreamchess/branches/0.3-experimental/src/libs/engine/test.cpp
+Log:
+	* Added another missing file...
+
+
+
+
+
+From waltervn at berlios.de  Thu Feb  5 03:11:11 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 5 Feb 2009 03:11:11 +0100
+Subject: [dreamchess-svn-commits] r664 -
+	dreamchess/branches/0.3-experimental/data/scripts
+Message-ID: <200902050211.n152BBUk010151@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-05 03:11:09 +0100 (Thu, 05 Feb 2009)
+New Revision: 664
+
+Added:
+   dreamchess/branches/0.3-experimental/data/scripts/config_manager.lua
+Log:
+	* Missing file.
+
+
+
+
+
+From waltervn at berlios.de  Thu Feb  5 18:54:57 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 5 Feb 2009 18:54:57 +0100
+Subject: [dreamchess-svn-commits] r665 - in
+	dreamchess/branches/0.3-experimental: data/scripts src/libs/engine
+Message-ID: <200902051754.n15HsvYR004961@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-05 18:54:55 +0100 (Thu, 05 Feb 2009)
+New Revision: 665
+
+Added:
+   dreamchess/branches/0.3-experimental/data/scripts/class.lua
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/config_manager.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/test.cpp
+Log:
+	* Added Lua class implementation from Lua wiki.
+
+
+
+
+
+From waltervn at berlios.de  Thu Feb  5 22:51:39 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 5 Feb 2009 22:51:39 +0100
+Subject: [dreamchess-svn-commits] r666 -
+	dreamchess/branches/0.3-experimental/data/scripts
+Message-ID: <200902052151.n15LpdhJ010492@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-05 22:51:38 +0100 (Thu, 05 Feb 2009)
+New Revision: 666
+
+Added:
+   dreamchess/branches/0.3-experimental/data/scripts/log.lua
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/config_manager.lua
+Log:
+	* Added log class.
+
+
+
+
+
+From waltervn at berlios.de  Thu Feb  5 23:40:30 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 5 Feb 2009 23:40:30 +0100
+Subject: [dreamchess-svn-commits] r667 - in
+	dreamchess/branches/0.3-experimental: data/scripts src
+	src/libs/engine src/ui
+Message-ID: <200902052240.n15MeU0s016804@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-02-05 23:40:20 +0100 (Thu, 05 Feb 2009)
+New Revision: 667
+
+Added:
+   dreamchess/branches/0.3-experimental/data/scripts/title.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/input.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/input.h
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.h
+Modified:
+   dreamchess/branches/0.3-experimental/src/dir.c
+   dreamchess/branches/0.3-experimental/src/libs/engine/Makefile.am
+   dreamchess/branches/0.3-experimental/src/libs/engine/engine.i
+   dreamchess/branches/0.3-experimental/src/libs/engine/test.cpp
+   dreamchess/branches/0.3-experimental/src/ui/Makefile.am
+Log:
+	* Started moving engine/title to Lua.
+
+
+
+
+
+From waltervn at berlios.de  Fri Feb  6 00:09:25 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 6 Feb 2009 00:09:25 +0100
+Subject: [dreamchess-svn-commits] r668 -
+	dreamchess/branches/0.3-experimental/src/libs/engine
+Message-ID: <200902052309.n15N9PBX019270@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-06 00:09:24 +0100 (Fri, 06 Feb 2009)
+New Revision: 668
+
+Modified:
+   dreamchess/branches/0.3-experimental/src/libs/engine/Makefile.am
+Log:
+	* Fixed wrapper deps.
+
+
+
+
+
+From waltervn at berlios.de  Fri Feb  6 00:55:25 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 6 Feb 2009 00:55:25 +0100
+Subject: [dreamchess-svn-commits] r669 - in
+	dreamchess/branches/0.3-experimental: . data/scripts src
+	src/libs/engine src/ui src/ui/include
+Message-ID: <200902052355.n15NtPYn015164@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-02-06 00:55:14 +0100 (Fri, 06 Feb 2009)
+New Revision: 669
+
+Added:
+   dreamchess/branches/0.3-experimental/src/ui/game.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title_camera.cpp
+Removed:
+   dreamchess/branches/0.3-experimental/src/ui/include/input.h
+   dreamchess/branches/0.3-experimental/src/ui/title/
+Modified:
+   dreamchess/branches/0.3-experimental/configure.ac
+   dreamchess/branches/0.3-experimental/data/scripts/config_manager.lua
+   dreamchess/branches/0.3-experimental/data/scripts/title.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/input.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/input.h
+   dreamchess/branches/0.3-experimental/src/main.cpp
+   dreamchess/branches/0.3-experimental/src/ui/Makefile.am
+Log:
+	* Moved some files around. 
+
+
+
+
+
+From waltervn at berlios.de  Fri Feb  6 01:04:28 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 6 Feb 2009 01:04:28 +0100
+Subject: [dreamchess-svn-commits] r670 - in
+	dreamchess/branches/0.3-experimental/src: . libs/engine
+Message-ID: <200902060004.n1604S9q023908@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-02-06 01:04:24 +0100 (Fri, 06 Feb 2009)
+New Revision: 670
+
+Modified:
+   dreamchess/branches/0.3-experimental/src/Makefile.am
+   dreamchess/branches/0.3-experimental/src/libs/engine/Makefile.am
+   dreamchess/branches/0.3-experimental/src/libs/engine/input.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/input.h
+Log:
+	* Stopped /src/ui from being built.
+
+
+
+
+
+From waltervn at berlios.de  Fri Feb  6 02:10:16 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 6 Feb 2009 02:10:16 +0100
+Subject: [dreamchess-svn-commits] r671 - in
+	dreamchess/branches/0.3-experimental/src: . libs/engine
+Message-ID: <200902060110.n161AGmM020543@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-02-06 02:10:11 +0100 (Fri, 06 Feb 2009)
+New Revision: 671
+
+Modified:
+   dreamchess/branches/0.3-experimental/src/libs/engine/input.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/input.h
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.h
+   dreamchess/branches/0.3-experimental/src/main.cpp
+Log:
+	* Fixed an SDL_main issue with OS X. Keyboard class.
+
+
+
+
+
+From waltervn at berlios.de  Sat Feb  7 04:27:44 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 7 Feb 2009 04:27:44 +0100
+Subject: [dreamchess-svn-commits] r672 -
+	dreamchess/branches/0.3-experimental/data/scripts
+Message-ID: <200902070327.n173RiDT007487@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-07 04:27:42 +0100 (Sat, 07 Feb 2009)
+New Revision: 672
+
+Added:
+   dreamchess/branches/0.3-experimental/data/scripts/config.lua
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/config_manager.lua
+   dreamchess/branches/0.3-experimental/data/scripts/title.lua
+Log:
+	* Finished basic elements of config manager
+
+
+
+
+
+From waltervn at berlios.de  Sun Feb  8 03:57:42 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 8 Feb 2009 03:57:42 +0100
+Subject: [dreamchess-svn-commits] r673 - in
+	dreamchess/branches/0.3-experimental: data/scripts src/libs/engine
+Message-ID: <200902080257.n182vgA2023969@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-08 03:57:40 +0100 (Sun, 08 Feb 2009)
+New Revision: 673
+
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/config.lua
+   dreamchess/branches/0.3-experimental/data/scripts/config_manager.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/test.cpp
+Log:
+	* Added config file loading
+
+
+
+
+
+From waltervn at berlios.de  Mon Feb  9 01:04:34 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 9 Feb 2009 01:04:34 +0100
+Subject: [dreamchess-svn-commits] r674 - in
+	dreamchess/branches/0.3-experimental: data/scripts src/libs/engine
+Message-ID: <200902090004.n1904YNH028702@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-02-09 01:04:21 +0100 (Mon, 09 Feb 2009)
+New Revision: 674
+
+Added:
+   dreamchess/branches/0.3-experimental/src/libs/engine/mesh.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/mesh.h
+   dreamchess/branches/0.3-experimental/src/libs/engine/texture.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/texture.h
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/title.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/Makefile.am
+   dreamchess/branches/0.3-experimental/src/libs/engine/engine.i
+Log:
+	* Attempted to get meshes to render from Lua.
+
+
+
+
+
+From waltervn at berlios.de  Mon Feb  9 01:25:29 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 9 Feb 2009 01:25:29 +0100
+Subject: [dreamchess-svn-commits] r675 - in
+	dreamchess/branches/0.3-experimental: data/scripts
+	src/libs/engine src/ui
+Message-ID: <200902090025.n190PTee016202@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-02-09 01:25:17 +0100 (Mon, 09 Feb 2009)
+New Revision: 675
+
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/title.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.h
+   dreamchess/branches/0.3-experimental/src/ui/scene.cpp
+Log:
+	* pre/post render.
+
+
+
+
+
+From waltervn at berlios.de  Mon Feb  9 01:30:17 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 9 Feb 2009 01:30:17 +0100
+Subject: [dreamchess-svn-commits] r676 -
+	dreamchess/branches/0.3-experimental/src/libs/engine
+Message-ID: <200902090030.n190UHLJ022894@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-02-09 01:30:13 +0100 (Mon, 09 Feb 2009)
+New Revision: 676
+
+Modified:
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.h
+Log:
+	* Copied the proper code block.
+
+
+
+
+
+From waltervn at berlios.de  Tue Feb 10 02:26:55 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 10 Feb 2009 02:26:55 +0100
+Subject: [dreamchess-svn-commits] r677 - in
+	dreamchess/branches/0.3-experimental: data/scripts src/libs/engine
+Message-ID: <200902100126.n1A1Qt1d014509@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-02-10 02:26:51 +0100 (Tue, 10 Feb 2009)
+New Revision: 677
+
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/title.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/mesh.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.h
+Log:
+	*Added some gl calls to the screen class, toyed with the title script.
+
+
+
+
+
+From waltervn at berlios.de  Tue Feb 10 03:12:00 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 10 Feb 2009 03:12:00 +0100
+Subject: [dreamchess-svn-commits] r678 -
+	dreamchess/branches/0.3-experimental/data/scripts
+Message-ID: <200902100212.n1A2C0et025893@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-02-10 03:11:58 +0100 (Tue, 10 Feb 2009)
+New Revision: 678
+
+Added:
+   dreamchess/branches/0.3-experimental/data/scripts/entity.lua
+Log:
+	* Forgot to commit ;)
+
+
+
+
+
+From waltervn at berlios.de  Wed Feb 11 06:58:43 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 11 Feb 2009 06:58:43 +0100
+Subject: [dreamchess-svn-commits] r679 - in
+	dreamchess/branches/0.3-experimental: data/scripts src/libs/engine
+Message-ID: <200902110558.n1B5whJr015163@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-02-11 06:58:31 +0100 (Wed, 11 Feb 2009)
+New Revision: 679
+
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/entity.lua
+   dreamchess/branches/0.3-experimental/data/scripts/title.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.cpp
+Log:
+	* Added camera, fixed entities not working right.
+
+
+
+
+
+From waltervn at berlios.de  Wed Feb 11 07:42:00 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 11 Feb 2009 07:42:00 +0100
+Subject: [dreamchess-svn-commits] r680 -
+	dreamchess/branches/0.3-experimental/data/scripts
+Message-ID: <200902110642.n1B6g09s018967@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-02-11 07:41:56 +0100 (Wed, 11 Feb 2009)
+New Revision: 680
+
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/entity.lua
+   dreamchess/branches/0.3-experimental/data/scripts/title.lua
+Log:
+	* Added model class, cleaned up title.lua some.
+
+
+
+
+
+From waltervn at berlios.de  Thu Feb 12 02:41:28 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 12 Feb 2009 02:41:28 +0100
+Subject: [dreamchess-svn-commits] r681 - in
+	dreamchess/branches/0.3-experimental: . data/scripts src
+	src/libs src/libs/engine src/libs/lpeg src/libs/socket
+Message-ID: <200902120141.n1C1fSPJ013975@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-12 02:41:17 +0100 (Thu, 12 Feb 2009)
+New Revision: 681
+
+Added:
+   dreamchess/branches/0.3-experimental/data/scripts/board.lua
+   dreamchess/branches/0.3-experimental/data/scripts/main.lua
+   dreamchess/branches/0.3-experimental/data/scripts/move.lua
+   dreamchess/branches/0.3-experimental/data/scripts/san.lua
+   dreamchess/branches/0.3-experimental/src/libs/lpeg/
+   dreamchess/branches/0.3-experimental/src/libs/lpeg/LICENSE
+   dreamchess/branches/0.3-experimental/src/libs/lpeg/Makefile.am
+   dreamchess/branches/0.3-experimental/src/libs/lpeg/lpeg.c
+   dreamchess/branches/0.3-experimental/src/libs/socket/
+   dreamchess/branches/0.3-experimental/src/libs/socket/LICENSE
+   dreamchess/branches/0.3-experimental/src/libs/socket/Makefile.am
+   dreamchess/branches/0.3-experimental/src/libs/socket/auxiliar.c
+   dreamchess/branches/0.3-experimental/src/libs/socket/auxiliar.h
+   dreamchess/branches/0.3-experimental/src/libs/socket/buffer.c
+   dreamchess/branches/0.3-experimental/src/libs/socket/buffer.h
+   dreamchess/branches/0.3-experimental/src/libs/socket/except.c
+   dreamchess/branches/0.3-experimental/src/libs/socket/except.h
+   dreamchess/branches/0.3-experimental/src/libs/socket/inet.c
+   dreamchess/branches/0.3-experimental/src/libs/socket/inet.h
+   dreamchess/branches/0.3-experimental/src/libs/socket/io.c
+   dreamchess/branches/0.3-experimental/src/libs/socket/io.h
+   dreamchess/branches/0.3-experimental/src/libs/socket/luasocket.c
+   dreamchess/branches/0.3-experimental/src/libs/socket/luasocket.h
+   dreamchess/branches/0.3-experimental/src/libs/socket/options.c
+   dreamchess/branches/0.3-experimental/src/libs/socket/options.h
+   dreamchess/branches/0.3-experimental/src/libs/socket/select.c
+   dreamchess/branches/0.3-experimental/src/libs/socket/select.h
+   dreamchess/branches/0.3-experimental/src/libs/socket/socket.h
+   dreamchess/branches/0.3-experimental/src/libs/socket/tcp.c
+   dreamchess/branches/0.3-experimental/src/libs/socket/tcp.h
+   dreamchess/branches/0.3-experimental/src/libs/socket/timeout.c
+   dreamchess/branches/0.3-experimental/src/libs/socket/timeout.h
+   dreamchess/branches/0.3-experimental/src/libs/socket/udp.c
+   dreamchess/branches/0.3-experimental/src/libs/socket/udp.h
+   dreamchess/branches/0.3-experimental/src/libs/socket/usocket.c
+   dreamchess/branches/0.3-experimental/src/libs/socket/usocket.h
+   dreamchess/branches/0.3-experimental/src/libs/socket/wsocket.c
+   dreamchess/branches/0.3-experimental/src/libs/socket/wsocket.h
+Modified:
+   dreamchess/branches/0.3-experimental/configure.ac
+   dreamchess/branches/0.3-experimental/data/scripts/title.lua
+   dreamchess/branches/0.3-experimental/src/Makefile.am
+   dreamchess/branches/0.3-experimental/src/libs/Makefile.am
+   dreamchess/branches/0.3-experimental/src/libs/engine/mesh.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/test.cpp
+Log:
+	* Added lualpeg, luasocket and start of chess board/move handling.
+
+
+
+
+
+From waltervn at berlios.de  Thu Feb 12 02:58:02 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 12 Feb 2009 02:58:02 +0100
+Subject: [dreamchess-svn-commits] r682 - in
+	dreamchess/branches/0.3-experimental: data/scripts src/libs/engine
+Message-ID: <200902120158.n1C1w2ZT016051@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-02-12 02:57:58 +0100 (Thu, 12 Feb 2009)
+New Revision: 682
+
+Added:
+   dreamchess/branches/0.3-experimental/data/scripts/scene.lua
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/entity.lua
+   dreamchess/branches/0.3-experimental/data/scripts/title.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.cpp
+Log:
+	* Added scene class. 
+
+
+
+
+
+From waltervn at berlios.de  Thu Feb 12 03:24:34 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 12 Feb 2009 03:24:34 +0100
+Subject: [dreamchess-svn-commits] r683 - dreamchess/branches/0.3-experimental
+Message-ID: <200902120224.n1C2OY8H017776@sheep.berlios.de>
+
+Author: waltervn
+Date: 2009-02-12 03:24:32 +0100 (Thu, 12 Feb 2009)
+New Revision: 683
+
+Modified:
+   dreamchess/branches/0.3-experimental/configure.ac
+Log:
+	* Fix lualpeg and luasocket checks.
+
+
+
+
+
+From waltervn at berlios.de  Thu Feb 12 05:59:27 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 12 Feb 2009 05:59:27 +0100
+Subject: [dreamchess-svn-commits] r684 - in
+	dreamchess/branches/0.3-experimental: data/scripts src/libs/engine
+Message-ID: <200902120459.n1C4xRGI031678@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-02-12 05:59:23 +0100 (Thu, 12 Feb 2009)
+New Revision: 684
+
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/scene.lua
+   dreamchess/branches/0.3-experimental/data/scripts/title.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/mesh.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.h
+Log:
+	* Enabled lighting. 
+
+
+
+
+

@@ -1,0 +1,37 @@
+From waltervn at berlios.de  Mon Jan  1 19:15:21 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 1 Jan 2007 19:15:21 +0100
+Subject: [dreamchess-svn-commits] r440 - in dreamchess/trunk: . src
+	src/audio src/include src/ui_sdlgl
+Message-ID: <200701011815.l01IFLHf014451@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-01-01 19:14:10 +0100 (Mon, 01 Jan 2007)
+New Revision: 440
+
+Added:
+   dreamchess/trunk/src/audio/
+   dreamchess/trunk/src/audio/Makefile.am
+   dreamchess/trunk/src/audio/playlist.c
+   dreamchess/trunk/src/audio/playlist.h
+   dreamchess/trunk/src/audio/sdlmixer.c
+   dreamchess/trunk/src/include/audio.h
+Modified:
+   dreamchess/trunk/configure.ac
+   dreamchess/trunk/src/Makefile.am
+   dreamchess/trunk/src/include/theme.h
+   dreamchess/trunk/src/theme.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+Log:
+	* src/audio/playlist.c, src/audio/playlist.h, 
+	src/audio/sdlmixer.c, src/audio/Makefile.am, 
+	src/include/audio.h: Added music playing code to repository.
+
+	* src/theme.c, src/include/theme.h: Added music pack code.
+	* src/ui_sdlgl/ui_sdlgl.c: Call music functions.
+	* src/Makefile.am, configure.ac: Updated.
+
+
+
+
+

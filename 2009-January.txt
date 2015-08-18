@@ -1,0 +1,100 @@
+From waltervn at berlios.de  Wed Jan 28 20:15:24 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 28 Jan 2009 20:15:24 +0100
+Subject: [dreamchess-svn-commits] r648 - in
+	dreamchess/branches/0.3-experimental: . src src/macosx src/ui
+	src/ui/game src/ui/include src/ui_sdlgl
+Message-ID: <200901281915.n0SJFOfH001209@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-01-28 20:14:58 +0100 (Wed, 28 Jan 2009)
+New Revision: 648
+
+Modified:
+   dreamchess/branches/0.3-experimental/Makefile.am
+   dreamchess/branches/0.3-experimental/src/Makefile.am
+   dreamchess/branches/0.3-experimental/src/macosx/Info.plist.in
+   dreamchess/branches/0.3-experimental/src/ui/Makefile.am
+   dreamchess/branches/0.3-experimental/src/ui/box.cpp
+   dreamchess/branches/0.3-experimental/src/ui/game/game.cpp
+   dreamchess/branches/0.3-experimental/src/ui/include/script.h
+   dreamchess/branches/0.3-experimental/src/ui/mesh.cpp
+   dreamchess/branches/0.3-experimental/src/ui/scene.cpp
+   dreamchess/branches/0.3-experimental/src/ui/screen.cpp
+   dreamchess/branches/0.3-experimental/src/ui/script.cpp
+   dreamchess/branches/0.3-experimental/src/ui/texture.cpp
+   dreamchess/branches/0.3-experimental/src/ui_sdlgl/ui_sdlgl.h
+Log:
+	* Various long forgotten changes. Oops. 
+
+
+
+
+
+From waltervn at berlios.de  Fri Jan 30 04:07:45 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 30 Jan 2009 04:07:45 +0100
+Subject: [dreamchess-svn-commits] r649 - in
+	dreamchess/branches/0.3-experimental/src/ui: . game include title
+Message-ID: <200901300307.n0U37jqs028493@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-01-30 04:07:32 +0100 (Fri, 30 Jan 2009)
+New Revision: 649
+
+Modified:
+   dreamchess/branches/0.3-experimental/src/ui/box.cpp
+   dreamchess/branches/0.3-experimental/src/ui/camera.cpp
+   dreamchess/branches/0.3-experimental/src/ui/chess_board.cpp
+   dreamchess/branches/0.3-experimental/src/ui/entity.cpp
+   dreamchess/branches/0.3-experimental/src/ui/game/game.cpp
+   dreamchess/branches/0.3-experimental/src/ui/include/box.h
+   dreamchess/branches/0.3-experimental/src/ui/include/camera.h
+   dreamchess/branches/0.3-experimental/src/ui/include/chess_board.h
+   dreamchess/branches/0.3-experimental/src/ui/include/entity.h
+   dreamchess/branches/0.3-experimental/src/ui/include/input.h
+   dreamchess/branches/0.3-experimental/src/ui/include/light.h
+   dreamchess/branches/0.3-experimental/src/ui/include/mesh.h
+   dreamchess/branches/0.3-experimental/src/ui/include/model.h
+   dreamchess/branches/0.3-experimental/src/ui/include/resource.h
+   dreamchess/branches/0.3-experimental/src/ui/include/screen.h
+   dreamchess/branches/0.3-experimental/src/ui/include/texture.h
+   dreamchess/branches/0.3-experimental/src/ui/input.cpp
+   dreamchess/branches/0.3-experimental/src/ui/mesh.cpp
+   dreamchess/branches/0.3-experimental/src/ui/model.cpp
+   dreamchess/branches/0.3-experimental/src/ui/resource.cpp
+   dreamchess/branches/0.3-experimental/src/ui/scene.cpp
+   dreamchess/branches/0.3-experimental/src/ui/screen.cpp
+   dreamchess/branches/0.3-experimental/src/ui/script.cpp
+   dreamchess/branches/0.3-experimental/src/ui/texture.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title.cpp
+Log:
+	* Changed entity, texture, mesh, etc, classes to be derived from resource.
+
+
+
+
+
+From waltervn at berlios.de  Fri Jan 30 04:18:59 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 30 Jan 2009 04:18:59 +0100
+Subject: [dreamchess-svn-commits] r650 - in
+	dreamchess/branches/0.3-experimental/src/ui: . include title
+Message-ID: <200901300318.n0U3Ixcv030409@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-01-30 04:18:56 +0100 (Fri, 30 Jan 2009)
+New Revision: 650
+
+Modified:
+   dreamchess/branches/0.3-experimental/src/ui/entity.cpp
+   dreamchess/branches/0.3-experimental/src/ui/include/entity.h
+   dreamchess/branches/0.3-experimental/src/ui/light.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title.cpp
+Log:
+	* Fixed an issue with the way generate_bbox was virtual. 
+
+
+
+
+

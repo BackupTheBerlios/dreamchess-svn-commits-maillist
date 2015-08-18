@@ -1,0 +1,331 @@
+From waltervn at berlios.de  Sun Aug  5 14:58:17 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 5 Aug 2007 14:58:17 +0200
+Subject: [dreamchess-svn-commits] r451 - in dreamchess/trunk/src: . audio
+	include ui_sdlgl
+Message-ID: <200708051258.l75CwHEF016637@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-08-05 14:58:11 +0200 (Sun, 05 Aug 2007)
+New Revision: 451
+
+Modified:
+   dreamchess/trunk/src/audio/playlist.c
+   dreamchess/trunk/src/audio/sdlmixer.c
+   dreamchess/trunk/src/credits.c
+   dreamchess/trunk/src/include/audio.h
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+Log:
+	* src/audio/sdlmixer.c, src/include/audio.h,
+	src/ui_sdlgl/ui_sdlgl.c: Play first song at title screen, and songs 2+
+	in-game.
+
+	* src/audio/playlist.c: Allow title, album and artist to be
+	unspecified in the XML file.
+
+	* src/credits.c: Changed date to 2007.
+
+
+
+
+
+From waltervn at berlios.de  Fri Aug 10 02:40:44 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 10 Aug 2007 02:40:44 +0200
+Subject: [dreamchess-svn-commits] r452 - in music/trunk: . data data/music
+	pkg pkg/unix
+Message-ID: <200708100040.l7A0eiH4001070@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-08-10 02:40:42 +0200 (Fri, 10 Aug 2007)
+New Revision: 452
+
+Added:
+   music/trunk/data/music/
+   music/trunk/data/music/matt_smith/
+   music/trunk/pkg/
+   music/trunk/pkg/unix/
+   music/trunk/pkg/unix/makeinstaller.sh
+   music/trunk/pkg/unix/setup.sh
+Removed:
+   music/trunk/data/matt_smith/
+Log:
+	* data/music/matt_smith: Moved from data/matt_smith.
+
+	* pkg/unix: Added scripts to create a self-extracting unix installer,
+	using the makeself script.
+
+
+
+
+
+From waltervn at berlios.de  Fri Aug 10 02:42:46 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 10 Aug 2007 02:42:46 +0200
+Subject: [dreamchess-svn-commits] r453 - music/trunk
+Message-ID: <200708100042.l7A0gkOD001335@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-08-10 02:42:46 +0200 (Fri, 10 Aug 2007)
+New Revision: 453
+
+Added:
+   music/trunk/LICENSE
+Log:
+	* LICENSE: Added license info.
+
+
+
+
+
+From waltervn at berlios.de  Fri Aug 10 03:55:05 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 10 Aug 2007 03:55:05 +0200
+Subject: [dreamchess-svn-commits] r454 - music/trunk/pkg/unix
+Message-ID: <200708100155.l7A1t5mx004565@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-08-10 03:55:03 +0200 (Fri, 10 Aug 2007)
+New Revision: 454
+
+Modified:
+   music/trunk/pkg/unix/setup.sh
+Log:
+	* pkg/unix/setup.sh: Several fixes.
+
+
+
+
+
+From waltervn at berlios.de  Sat Aug 11 02:09:14 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 11 Aug 2007 02:09:14 +0200
+Subject: [dreamchess-svn-commits] r455 - music/trunk/pkg/unix
+Message-ID: <200708110009.l7B09E8d014537@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-08-11 02:09:13 +0200 (Sat, 11 Aug 2007)
+New Revision: 455
+
+Modified:
+   music/trunk/pkg/unix/setup.sh
+Log:
+	* pkg/unix/setup.sh: Default to ~/.dreamchess.
+
+
+
+
+
+From waltervn at berlios.de  Sat Aug 11 04:11:26 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 11 Aug 2007 04:11:26 +0200
+Subject: [dreamchess-svn-commits] r456 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200708110211.l7B2BQRH021881@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-08-11 04:11:25 +0200 (Sat, 11 Aug 2007)
+New Revision: 456
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/title_dialog.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+Log:
+	* F11 toggles fullscreen. Added A fullscreen toggle to title.
+
+
+
+
+
+From waltervn at berlios.de  Sat Aug 11 04:31:09 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 11 Aug 2007 04:31:09 +0200
+Subject: [dreamchess-svn-commits] r457 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200708110231.l7B2V9tT023054@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-08-11 04:31:08 +0200 (Sat, 11 Aug 2007)
+New Revision: 457
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+Log:
+	* ui_sdlgl/ui_sdlgl.c: The default theme XML is loaded first.
+
+
+
+
+
+From waltervn at berlios.de  Sat Aug 11 05:01:25 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 11 Aug 2007 05:01:25 +0200
+Subject: [dreamchess-svn-commits] r458 - in dreamchess/trunk: . src/ui_sdlgl
+Message-ID: <200708110301.l7B31PDf024237@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-08-11 05:01:24 +0200 (Sat, 11 Aug 2007)
+New Revision: 458
+
+Modified:
+   dreamchess/trunk/README
+   dreamchess/trunk/src/ui_sdlgl/get_move.c
+   dreamchess/trunk/src/ui_sdlgl/title_dialog.c
+Log:
+	* Fullscreen toggle limited to unix. README updated. Ingame 
+	  fullscreen toggle fixed.
+
+
+
+
+
+From waltervn at berlios.de  Sun Aug 12 00:24:10 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 12 Aug 2007 00:24:10 +0200
+Subject: [dreamchess-svn-commits] r459 - dreamchess/trunk
+Message-ID: <200708112224.l7BMOA1f030757@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-08-12 00:24:10 +0200 (Sun, 12 Aug 2007)
+New Revision: 459
+
+Modified:
+   dreamchess/trunk/AUTHORS
+Log:
+	* AUTHORS: Updated an email address.
+
+
+
+
+
+From waltervn at berlios.de  Tue Aug 21 21:30:20 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 21 Aug 2007 21:30:20 +0200
+Subject: [dreamchess-svn-commits] r460 - in dreamchess/trunk: data/themes
+	src/include src/ui_sdlgl
+Message-ID: <200708211930.l7LJUK87000487@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-08-21 21:30:19 +0200 (Tue, 21 Aug 2007)
+New Revision: 460
+
+Modified:
+   dreamchess/trunk/data/themes/sketch.xml
+   dreamchess/trunk/src/include/theme.h
+   dreamchess/trunk/src/ui_sdlgl/theme.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.h
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* Added abilty to select selector colour. Added a spin effect.
+
+
+
+
+
+From waltervn at berlios.de  Tue Aug 21 21:32:17 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 21 Aug 2007 21:32:17 +0200
+Subject: [dreamchess-svn-commits] r461 - dreamchess/trunk/src
+Message-ID: <200708211932.l7LJWH2F000700@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-08-21 21:32:17 +0200 (Tue, 21 Aug 2007)
+New Revision: 461
+
+Modified:
+   dreamchess/trunk/src/theme.c
+Log:
+	* theme.c: Removed some printfs.
+
+
+
+
+
+From waltervn at berlios.de  Sun Aug 26 04:06:20 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 26 Aug 2007 04:06:20 +0200
+Subject: [dreamchess-svn-commits] r462 - in dreamchess/trunk: data/themes
+	src/ui_sdlgl
+Message-ID: <200708260206.l7Q26KaC002127@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-08-26 04:06:17 +0200 (Sun, 26 Aug 2007)
+New Revision: 462
+
+Modified:
+   dreamchess/trunk/data/themes/default.xml
+   dreamchess/trunk/data/themes/metal.xml
+   dreamchess/trunk/data/themes/sketch.xml
+   dreamchess/trunk/src/ui_sdlgl/theme.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.h
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* Selector theme additions. Texture, bounce, size, drop shadow.
+
+
+
+
+
+From waltervn at berlios.de  Sun Aug 26 04:08:13 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 26 Aug 2007 04:08:13 +0200
+Subject: [dreamchess-svn-commits] r463 - in dreamchess/trunk/data/pieces:
+	classicbw classiclow elements figurine metal sketch
+Message-ID: <200708260208.l7Q28Dq9002771@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-08-26 04:08:12 +0200 (Sun, 26 Aug 2007)
+New Revision: 463
+
+Added:
+   dreamchess/trunk/data/pieces/classicbw/selector.png
+   dreamchess/trunk/data/pieces/classiclow/selector.png
+   dreamchess/trunk/data/pieces/elements/selector.png
+   dreamchess/trunk/data/pieces/figurine/selector.png
+   dreamchess/trunk/data/pieces/metal/selector.png
+   dreamchess/trunk/data/pieces/sketch/selector.png
+Log:
+	* Added the selector images. Whoops.
+
+
+
+
+
+From waltervn at berlios.de  Sun Aug 26 04:16:45 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 26 Aug 2007 04:16:45 +0200
+Subject: [dreamchess-svn-commits] r464 - in dreamchess/trunk: data/themes
+	src/ui_sdlgl
+Message-ID: <200708260216.l7Q2Gjit006142@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-08-26 04:16:44 +0200 (Sun, 26 Aug 2007)
+New Revision: 464
+
+Modified:
+   dreamchess/trunk/data/themes/default.xml
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* ui_sdlgl_3d.c: Fixed the sel rotation sticking between themes.
+
+
+
+
+
+From waltervn at berlios.de  Sun Aug 26 04:33:30 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 26 Aug 2007 04:33:30 +0200
+Subject: [dreamchess-svn-commits] r465 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200708260233.l7Q2XU7u008722@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-08-26 04:33:28 +0200 (Sun, 26 Aug 2007)
+New Revision: 465
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* Fixed a bug causing the selector bounce to fail.
+
+
+
+
+

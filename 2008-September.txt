@@ -1,0 +1,376 @@
+From waltervn at berlios.de  Thu Sep  4 13:52:16 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 4 Sep 2008 13:52:16 +0200
+Subject: [dreamchess-svn-commits] r634 - in tools/trunk: . macports
+	macports/audio macports/audio/libsdl_mixer macports/devel
+	macports/devel/libmxml macports/devel/libsdl
+	macports/devel/libsdl/files macports/devel/libsdl_image
+Message-ID: <200809041152.m84BqGmJ021091@sheep.berlios.de>
+
+Author: waltervn
+Date: 2008-09-04 13:52:14 +0200 (Thu, 04 Sep 2008)
+New Revision: 634
+
+Added:
+   tools/trunk/macports/
+   tools/trunk/macports/audio/
+   tools/trunk/macports/audio/libsdl_mixer/
+   tools/trunk/macports/audio/libsdl_mixer/Portfile
+   tools/trunk/macports/devel/
+   tools/trunk/macports/devel/libmxml/
+   tools/trunk/macports/devel/libmxml/Portfile
+   tools/trunk/macports/devel/libsdl/
+   tools/trunk/macports/devel/libsdl/Portfile
+   tools/trunk/macports/devel/libsdl/files/
+   tools/trunk/macports/devel/libsdl/files/patch-fatbuild.sh
+   tools/trunk/macports/devel/libsdl_image/
+   tools/trunk/macports/devel/libsdl_image/Portfile
+Log:
+	* Modified macports for Dreamchess.
+
+
+
+
+
+From waltervn at berlios.de  Thu Sep  4 15:34:31 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 4 Sep 2008 15:34:31 +0200
+Subject: [dreamchess-svn-commits] r635 - in dreamchess/trunk: . src
+	src/macosx
+Message-ID: <200809041334.m84DYVjg030030@sheep.berlios.de>
+
+Author: waltervn
+Date: 2008-09-04 15:34:27 +0200 (Thu, 04 Sep 2008)
+New Revision: 635
+
+Added:
+   dreamchess/trunk/src/macosx/makeapp.pl
+Removed:
+   dreamchess/trunk/DreamChess.xcodeproj/
+   dreamchess/trunk/English.lproj/
+   dreamchess/trunk/src/macosx/Makefile.am
+   dreamchess/trunk/src/macosx/SDLMain.h
+   dreamchess/trunk/src/macosx/SDLMain.m
+   dreamchess/trunk/src/macosx/config.h
+Modified:
+   dreamchess/trunk/Makefile.am
+   dreamchess/trunk/configure.ac
+   dreamchess/trunk/src/Makefile.am
+   dreamchess/trunk/src/dir.c
+   dreamchess/trunk/src/main.c
+Log:
+	* Converted OS X port to automake/autoconf.
+
+
+
+
+
+From waltervn at berlios.de  Thu Sep  4 15:45:49 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 4 Sep 2008 15:45:49 +0200
+Subject: [dreamchess-svn-commits] r636 - dreamchess/trunk/src/include
+Message-ID: <200809041345.m84Djn2f031178@sheep.berlios.de>
+
+Author: waltervn
+Date: 2008-09-04 15:45:48 +0200 (Thu, 04 Sep 2008)
+New Revision: 636
+
+Modified:
+   dreamchess/trunk/src/include/Makefile.am
+Log:
+	* src/include/Makefile.am: Do not use echo -n.
+
+
+
+
+
+From waltervn at berlios.de  Fri Sep  5 04:29:47 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 5 Sep 2008 04:29:47 +0200
+Subject: [dreamchess-svn-commits] r637 - in dreamchess/trunk: . src
+	src/macosx
+Message-ID: <200809050229.m852TlNa029605@sheep.berlios.de>
+
+Author: waltervn
+Date: 2008-09-05 04:29:45 +0200 (Fri, 05 Sep 2008)
+New Revision: 637
+
+Added:
+   dreamchess/trunk/src/macosx/Info.plist.in
+Modified:
+   dreamchess/trunk/configure.ac
+   dreamchess/trunk/src/Makefile.am
+   dreamchess/trunk/src/macosx/makeapp.pl
+Log:
+	* OS X: copy data files and Info.plist into bundle.
+
+
+
+
+
+From waltervn at berlios.de  Sat Sep  6 05:55:00 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 6 Sep 2008 05:55:00 +0200
+Subject: [dreamchess-svn-commits] r638 - in dreamchess/trunk/src: . macosx
+Message-ID: <200809060355.m863t0PM024390@sheep.berlios.de>
+
+Author: krismca
+Date: 2008-09-06 05:54:36 +0200 (Sat, 06 Sep 2008)
+New Revision: 638
+
+Modified:
+   dreamchess/trunk/src/dir.c
+   dreamchess/trunk/src/dreamchess.c
+   dreamchess/trunk/src/macosx/makeapp.pl
+Log:
+	* MacOS X port loads it's data, and dreamer, from it's bundle directory. Maclike Prefs dir set. 
+
+
+
+
+
+From waltervn at berlios.de  Sat Sep  6 05:56:11 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 6 Sep 2008 05:56:11 +0200
+Subject: [dreamchess-svn-commits] r639 - dreamchess/trunk/src
+Message-ID: <200809060356.m863uBkR024974@sheep.berlios.de>
+
+Author: krismca
+Date: 2008-09-06 05:56:09 +0200 (Sat, 06 Sep 2008)
+New Revision: 639
+
+Modified:
+   dreamchess/trunk/src/dreamchess.c
+Log:
+	* Removed an errant printf.
+
+
+
+
+
+From waltervn at berlios.de  Mon Sep  8 04:51:48 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 8 Sep 2008 04:51:48 +0200
+Subject: [dreamchess-svn-commits] r640 - in tools/trunk/macports: . leopard
+	leopard/archivers leopard/archivers/zlib
+	leopard/archivers/zlib/files leopard/audio
+	leopard/audio/libsdl_mixer leopard/devel
+	leopard/devel/libmxml leopard/devel/libsdl
+	leopard/devel/libsdl/files leopard/devel/libsdl_image
+	leopard/graphics leopard/graphics/libpng leopard/multimedia
+	leopard/multimedia/libogg
+Message-ID: <200809080251.m882pm5W003686@sheep.berlios.de>
+
+Author: krismca
+Date: 2008-09-08 04:51:34 +0200 (Mon, 08 Sep 2008)
+New Revision: 640
+
+Added:
+   tools/trunk/macports/leopard/
+   tools/trunk/macports/leopard/archivers/
+   tools/trunk/macports/leopard/archivers/zlib/
+   tools/trunk/macports/leopard/archivers/zlib/Portfile
+   tools/trunk/macports/leopard/archivers/zlib/files/
+   tools/trunk/macports/leopard/archivers/zlib/files/patch-Makefile-static.diff
+   tools/trunk/macports/leopard/audio/
+   tools/trunk/macports/leopard/audio/libsdl_mixer/
+   tools/trunk/macports/leopard/audio/libsdl_mixer/Portfile
+   tools/trunk/macports/leopard/devel/
+   tools/trunk/macports/leopard/devel/libmxml/
+   tools/trunk/macports/leopard/devel/libmxml/Portfile
+   tools/trunk/macports/leopard/devel/libsdl/
+   tools/trunk/macports/leopard/devel/libsdl/Portfile
+   tools/trunk/macports/leopard/devel/libsdl/files/
+   tools/trunk/macports/leopard/devel/libsdl/files/patch-fatbuild.sh
+   tools/trunk/macports/leopard/devel/libsdl_image/
+   tools/trunk/macports/leopard/devel/libsdl_image/Portfile
+   tools/trunk/macports/leopard/graphics/
+   tools/trunk/macports/leopard/graphics/libpng/
+   tools/trunk/macports/leopard/graphics/libpng/Portfile
+   tools/trunk/macports/leopard/leopard-intel-conf.sh
+   tools/trunk/macports/leopard/multimedia/
+   tools/trunk/macports/leopard/multimedia/libogg/
+   tools/trunk/macports/leopard/multimedia/libogg/Portfile
+Log:
+	* Added modified macports files needed to build for universal(G3) support, as well as configure script.
+
+
+
+
+
+From waltervn at berlios.de  Mon Sep  8 05:20:59 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 8 Sep 2008 05:20:59 +0200
+Subject: [dreamchess-svn-commits] r641 - in dreamchess/trunk: data src
+	src/macosx src/ui_sdlgl
+Message-ID: <200809080320.m883Kxjn011458@sheep.berlios.de>
+
+Author: krismca
+Date: 2008-09-08 05:20:49 +0200 (Mon, 08 Sep 2008)
+New Revision: 641
+
+Modified:
+   dreamchess/trunk/data/icon.icns
+   dreamchess/trunk/src/dir.c
+   dreamchess/trunk/src/dreamchess.c
+   dreamchess/trunk/src/macosx/makeapp.pl
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+Log:
+	* New OSX icon. SDL icon disabled in OSX. Dreamer relocated in bundle. Bundle path can now have spaces. 
+
+
+
+
+
+From waltervn at berlios.de  Tue Sep 23 02:54:35 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 23 Sep 2008 02:54:35 +0200
+Subject: [dreamchess-svn-commits] r642 - in
+	dreamchess/branches/0.3-experimental: . data src src/include
+	src/macosx src/ui_sdlgl
+Message-ID: <200809230054.m8N0sZKi024941@sheep.berlios.de>
+
+Author: waltervn
+Date: 2008-09-23 02:54:25 +0200 (Tue, 23 Sep 2008)
+New Revision: 642
+
+Added:
+   dreamchess/branches/0.3-experimental/src/macosx/Info.plist.in
+   dreamchess/branches/0.3-experimental/src/macosx/makeapp.pl
+Removed:
+   dreamchess/branches/0.3-experimental/DreamChess.xcodeproj/
+   dreamchess/branches/0.3-experimental/English.lproj/
+   dreamchess/branches/0.3-experimental/src/macosx/Makefile.am
+   dreamchess/branches/0.3-experimental/src/macosx/SDLMain.h
+   dreamchess/branches/0.3-experimental/src/macosx/SDLMain.m
+   dreamchess/branches/0.3-experimental/src/macosx/config.h
+Modified:
+   dreamchess/branches/0.3-experimental/Makefile.am
+   dreamchess/branches/0.3-experimental/configure.ac
+   dreamchess/branches/0.3-experimental/data/icon.icns
+   dreamchess/branches/0.3-experimental/src/Makefile.am
+   dreamchess/branches/0.3-experimental/src/dir.c
+   dreamchess/branches/0.3-experimental/src/dreamchess.c
+   dreamchess/branches/0.3-experimental/src/include/Makefile.am
+   dreamchess/branches/0.3-experimental/src/ui_sdlgl/ui_sdlgl.c
+Log:
+	* Forward ported OS X changed (r632:641) from trunk.
+
+
+
+
+
+From waltervn at berlios.de  Tue Sep 23 03:36:04 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 23 Sep 2008 03:36:04 +0200
+Subject: [dreamchess-svn-commits] r643 - in
+	dreamchess/branches/0.3-experimental/src/ui: . include
+Message-ID: <200809230136.m8N1a40t000932@sheep.berlios.de>
+
+Author: waltervn
+Date: 2008-09-23 03:36:01 +0200 (Tue, 23 Sep 2008)
+New Revision: 643
+
+Modified:
+   dreamchess/branches/0.3-experimental/src/ui/Makefile.am
+   dreamchess/branches/0.3-experimental/src/ui/box.cpp
+   dreamchess/branches/0.3-experimental/src/ui/camera.cpp
+   dreamchess/branches/0.3-experimental/src/ui/include/mesh.h
+   dreamchess/branches/0.3-experimental/src/ui/include/screen.h
+   dreamchess/branches/0.3-experimental/src/ui/input.cpp
+   dreamchess/branches/0.3-experimental/src/ui/resource.cpp
+   dreamchess/branches/0.3-experimental/src/ui/scene.cpp
+   dreamchess/branches/0.3-experimental/src/ui/screen.cpp
+   dreamchess/branches/0.3-experimental/src/ui/texture.cpp
+Log:
+	* Fixed SDL include paths.
+
+
+
+
+
+From waltervn at berlios.de  Sun Sep 28 01:09:00 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 28 Sep 2008 01:09:00 +0200
+Subject: [dreamchess-svn-commits] r644 - in dreamchess/trunk/src: . dreamer
+	include include/gamegui libs/gamegui ui_sdlgl
+Message-ID: <200809272309.m8RN90qf018157@sheep.berlios.de>
+
+Author: waltervn
+Date: 2008-09-28 01:08:45 +0200 (Sun, 28 Sep 2008)
+New Revision: 644
+
+Added:
+   dreamchess/trunk/src/dreamer/clock.c
+   dreamchess/trunk/src/dreamer/clock.h
+   dreamchess/trunk/src/libs/gamegui/scrollbarv.c
+Modified:
+   dreamchess/trunk/src/dreamer/Makefile.am
+   dreamchess/trunk/src/dreamer/commands.c
+   dreamchess/trunk/src/dreamer/dreamer.c
+   dreamchess/trunk/src/dreamer/dreamer.h
+   dreamchess/trunk/src/dreamer/eval.c
+   dreamchess/trunk/src/dreamer/search.c
+   dreamchess/trunk/src/include/gamegui.h
+   dreamchess/trunk/src/include/gamegui/Makefile.am
+   dreamchess/trunk/src/include/gamegui/edit.h
+   dreamchess/trunk/src/libs/gamegui/Makefile.am
+   dreamchess/trunk/src/libs/gamegui/edit.c
+   dreamchess/trunk/src/main.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.h
+Log:
+	* Fixed a time control bug.
+	* Adjusted eval to score 0 at starting position.
+
+
+
+
+
+From waltervn at berlios.de  Sun Sep 28 15:28:02 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 28 Sep 2008 15:28:02 +0200
+Subject: [dreamchess-svn-commits] r645 - dreamchess/trunk/src/dreamer
+Message-ID: <200809281328.m8SDS2ES007582@sheep.berlios.de>
+
+Author: waltervn
+Date: 2008-09-28 15:27:59 +0200 (Sun, 28 Sep 2008)
+New Revision: 645
+
+Added:
+   dreamchess/trunk/src/dreamer/timer.c
+   dreamchess/trunk/src/dreamer/timer.h
+Removed:
+   dreamchess/trunk/src/dreamer/clock.c
+   dreamchess/trunk/src/dreamer/clock.h
+Modified:
+   dreamchess/trunk/src/dreamer/Makefile.am
+   dreamchess/trunk/src/dreamer/commands.c
+   dreamchess/trunk/src/dreamer/dreamer.c
+   dreamchess/trunk/src/dreamer/dreamer.h
+   dreamchess/trunk/src/dreamer/search.c
+Log:
+	* Renamed clock_* to timer_*.
+
+
+
+
+
+From waltervn at berlios.de  Sun Sep 28 15:31:49 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 28 Sep 2008 15:31:49 +0200
+Subject: [dreamchess-svn-commits] r646 - dreamchess/trunk
+Message-ID: <200809281331.m8SDVnbC007805@sheep.berlios.de>
+
+Author: waltervn
+Date: 2008-09-28 15:31:48 +0200 (Sun, 28 Sep 2008)
+New Revision: 646
+
+Modified:
+   dreamchess/trunk/configure.ac
+Log:
+	* configure.ac: Fix build for mingw32msvc.
+
+
+
+
+

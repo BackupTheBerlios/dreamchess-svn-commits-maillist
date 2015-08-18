@@ -1,0 +1,217 @@
+From waltervn at berlios.de  Wed Aug  6 19:27:52 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 6 Aug 2008 19:27:52 +0200
+Subject: [dreamchess-svn-commits] r625 - in
+	dreamchess/branches/0.3-experimental/src/ui: include title
+Message-ID: <200808061727.m76HRqXC025323@sheep.berlios.de>
+
+Author: krismca
+Date: 2008-08-06 19:27:49 +0200 (Wed, 06 Aug 2008)
+New Revision: 625
+
+Modified:
+   dreamchess/branches/0.3-experimental/src/ui/include/title.h
+   dreamchess/branches/0.3-experimental/src/ui/title/title.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title_camera.cpp
+Log:
+	* Added a 'shake' camera effect.
+
+
+
+
+
+From waltervn at berlios.de  Fri Aug  8 04:42:26 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 8 Aug 2008 04:42:26 +0200
+Subject: [dreamchess-svn-commits] r626 - in
+	dreamchess/branches/0.3-experimental/src/ui: . include title
+Message-ID: <200808080242.m782gQIF009354@sheep.berlios.de>
+
+Author: krismca
+Date: 2008-08-08 04:42:20 +0200 (Fri, 08 Aug 2008)
+New Revision: 626
+
+Added:
+   dreamchess/branches/0.3-experimental/src/ui/include/resource.h
+   dreamchess/branches/0.3-experimental/src/ui/resource.cpp
+Modified:
+   dreamchess/branches/0.3-experimental/src/ui/Makefile.am
+   dreamchess/branches/0.3-experimental/src/ui/include/input.h
+   dreamchess/branches/0.3-experimental/src/ui/input.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title.cpp
+Log:
+	* Added a resource list class, changed the input class to use 
+	  it.
+
+
+
+
+
+From waltervn at berlios.de  Sat Aug  9 05:02:07 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 9 Aug 2008 05:02:07 +0200
+Subject: [dreamchess-svn-commits] r627 - in
+	dreamchess/branches/0.3-experimental/src/ui: . game include title
+Message-ID: <200808090302.m79327t0007459@sheep.berlios.de>
+
+Author: krismca
+Date: 2008-08-09 05:01:55 +0200 (Sat, 09 Aug 2008)
+New Revision: 627
+
+Added:
+   dreamchess/branches/0.3-experimental/src/ui/game/
+   dreamchess/branches/0.3-experimental/src/ui/game/game.cpp
+Removed:
+   dreamchess/branches/0.3-experimental/src/ui/game.cpp
+   dreamchess/branches/0.3-experimental/src/ui/include/game.h
+Modified:
+   dreamchess/branches/0.3-experimental/src/ui/Makefile.am
+   dreamchess/branches/0.3-experimental/src/ui/box.cpp
+   dreamchess/branches/0.3-experimental/src/ui/chess_board.cpp
+   dreamchess/branches/0.3-experimental/src/ui/include/box.h
+   dreamchess/branches/0.3-experimental/src/ui/include/chess_board.h
+   dreamchess/branches/0.3-experimental/src/ui/include/mesh.h
+   dreamchess/branches/0.3-experimental/src/ui/include/model.h
+   dreamchess/branches/0.3-experimental/src/ui/include/scene.h
+   dreamchess/branches/0.3-experimental/src/ui/include/texture.h
+   dreamchess/branches/0.3-experimental/src/ui/include/title.h
+   dreamchess/branches/0.3-experimental/src/ui/mesh.cpp
+   dreamchess/branches/0.3-experimental/src/ui/model.cpp
+   dreamchess/branches/0.3-experimental/src/ui/scene.cpp
+   dreamchess/branches/0.3-experimental/src/ui/texture.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title.cpp
+Log:
+	* Merged game class into scene class. Scene class now inherits 
+	  from resource_list class. Classes now use 'string' rather than 
+	  'char *' for string parameters. 
+
+
+
+
+
+From waltervn at berlios.de  Sat Aug  9 06:28:20 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 9 Aug 2008 06:28:20 +0200
+Subject: [dreamchess-svn-commits] r628 - in
+	dreamchess/branches/0.3-experimental/src/ui: include title
+Message-ID: <200808090428.m794SK9R020295@sheep.berlios.de>
+
+Author: krismca
+Date: 2008-08-09 06:28:16 +0200 (Sat, 09 Aug 2008)
+New Revision: 628
+
+Modified:
+   dreamchess/branches/0.3-experimental/src/ui/include/title.h
+   dreamchess/branches/0.3-experimental/src/ui/title/title.cpp
+Log:
+	* Fixed some error from the previous commit. (missing headers).
+	  Added FPS movement to the camera.
+
+
+
+
+
+From waltervn at berlios.de  Sat Aug  9 08:26:17 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 9 Aug 2008 08:26:17 +0200
+Subject: [dreamchess-svn-commits] r629 - in
+	dreamchess/branches/0.3-experimental/src/ui: . include title
+Message-ID: <200808090626.m796QHvm016789@sheep.berlios.de>
+
+Author: krismca
+Date: 2008-08-09 08:26:09 +0200 (Sat, 09 Aug 2008)
+New Revision: 629
+
+Modified:
+   dreamchess/branches/0.3-experimental/src/ui/box.cpp
+   dreamchess/branches/0.3-experimental/src/ui/chess_board.cpp
+   dreamchess/branches/0.3-experimental/src/ui/entity.cpp
+   dreamchess/branches/0.3-experimental/src/ui/include/box.h
+   dreamchess/branches/0.3-experimental/src/ui/include/chess_board.h
+   dreamchess/branches/0.3-experimental/src/ui/include/entity.h
+   dreamchess/branches/0.3-experimental/src/ui/include/model.h
+   dreamchess/branches/0.3-experimental/src/ui/include/resource.h
+   dreamchess/branches/0.3-experimental/src/ui/include/scene.h
+   dreamchess/branches/0.3-experimental/src/ui/include/texture.h
+   dreamchess/branches/0.3-experimental/src/ui/include/title.h
+   dreamchess/branches/0.3-experimental/src/ui/model.cpp
+   dreamchess/branches/0.3-experimental/src/ui/resource.cpp
+   dreamchess/branches/0.3-experimental/src/ui/scene.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title.cpp
+Log:
+	* Changed entity classes to use the resource classes to fetch 
+	  textures and meshes. Changed the title screen to load textures
+	  and meshes into the resource list. Entities keep track of the 
+	  scene with which they are added to.
+
+
+
+
+
+From waltervn at berlios.de  Sun Aug 17 16:48:29 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 17 Aug 2008 16:48:29 +0200
+Subject: [dreamchess-svn-commits] r632 - in
+	dreamchess/branches/0.3-experimental: data data/scripts src
+	src/ui src/ui/game src/ui/include src/ui/title
+Message-ID: <200808171448.m7HEmT23020099@sheep.berlios.de>
+
+Author: krismca
+Date: 2008-08-17 16:48:14 +0200 (Sun, 17 Aug 2008)
+New Revision: 632
+
+Added:
+   dreamchess/branches/0.3-experimental/data/scripts/
+   dreamchess/branches/0.3-experimental/data/scripts/chess_piece.lua
+   dreamchess/branches/0.3-experimental/src/ui/include/script.h
+   dreamchess/branches/0.3-experimental/src/ui/script.cpp
+Modified:
+   dreamchess/branches/0.3-experimental/src/Makefile.am
+   dreamchess/branches/0.3-experimental/src/ui/Makefile.am
+   dreamchess/branches/0.3-experimental/src/ui/box.cpp
+   dreamchess/branches/0.3-experimental/src/ui/camera.cpp
+   dreamchess/branches/0.3-experimental/src/ui/chess_board.cpp
+   dreamchess/branches/0.3-experimental/src/ui/entity.cpp
+   dreamchess/branches/0.3-experimental/src/ui/game/game.cpp
+   dreamchess/branches/0.3-experimental/src/ui/include/box.h
+   dreamchess/branches/0.3-experimental/src/ui/include/camera.h
+   dreamchess/branches/0.3-experimental/src/ui/include/chess_board.h
+   dreamchess/branches/0.3-experimental/src/ui/include/entity.h
+   dreamchess/branches/0.3-experimental/src/ui/include/input.h
+   dreamchess/branches/0.3-experimental/src/ui/include/light.h
+   dreamchess/branches/0.3-experimental/src/ui/include/model.h
+   dreamchess/branches/0.3-experimental/src/ui/include/screen.h
+   dreamchess/branches/0.3-experimental/src/ui/include/title.h
+   dreamchess/branches/0.3-experimental/src/ui/input.cpp
+   dreamchess/branches/0.3-experimental/src/ui/light.cpp
+   dreamchess/branches/0.3-experimental/src/ui/model.cpp
+   dreamchess/branches/0.3-experimental/src/ui/scene.cpp
+   dreamchess/branches/0.3-experimental/src/ui/screen.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title.cpp
+   dreamchess/branches/0.3-experimental/src/ui/title/title_camera.cpp
+Log:
+	* Initial LUA, collision detection, mouse code.
+
+
+
+
+
+From waltervn at berlios.de  Sun Aug 31 21:28:23 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 31 Aug 2008 21:28:23 +0200
+Subject: [dreamchess-svn-commits] r633 - dreamchess/trunk
+Message-ID: <200808311928.m7VJSNS1026390@sheep.berlios.de>
+
+Author: waltervn
+Date: 2008-08-31 21:28:12 +0200 (Sun, 31 Aug 2008)
+New Revision: 633
+
+Modified:
+   dreamchess/trunk/configure.ac
+Log:
+	* configure.ac: Fix OpenGL detection on OS X.
+
+
+
+
+

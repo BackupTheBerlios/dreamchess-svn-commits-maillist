@@ -1,0 +1,2050 @@
+From waltervn at berlios.de  Fri Nov  2 00:26:07 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 2 Nov 2007 00:26:07 +0100
+Subject: [dreamchess-svn-commits] r498 - in dreamchess/trunk/src: . ui_sdlgl
+Message-ID: <200711012326.lA1NQ7Z6008524@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-02 00:26:04 +0100 (Fri, 02 Nov 2007)
+New Revision: 498
+
+Modified:
+   dreamchess/trunk/src/dreamchess.c
+   dreamchess/trunk/src/ui.h
+   dreamchess/trunk/src/ui_sdlgl/system.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+Log:
+	* src/dreamchess.c, src/ui.h, src/ui_sdlgl/ui_sdlgl.c,
+	src/ui_sdlgl/system.c: Attempt at getting resizing to work on win32.
+
+
+
+
+
+From waltervn at berlios.de  Fri Nov  2 03:11:37 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 2 Nov 2007 03:11:37 +0100
+Subject: [dreamchess-svn-commits] r499 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711020211.lA22BbF3006077@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-02 03:11:35 +0100 (Fri, 02 Nov 2007)
+New Revision: 499
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl.c: Reorganized the code a little.
+
+
+
+
+
+From waltervn at berlios.de  Fri Nov  2 03:43:15 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 2 Nov 2007 03:43:15 +0100
+Subject: [dreamchess-svn-commits] r500 - dreamchess/trunk/src
+Message-ID: <200711020243.lA22hFpY007821@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-02 03:43:07 +0100 (Fri, 02 Nov 2007)
+New Revision: 500
+
+Modified:
+   dreamchess/trunk/src/dreamchess.c
+Log:
+	* src/dreamchess.c: Disabled fullscreen toggle on win32.
+
+
+
+
+From waltervn at berlios.de  Fri Nov  2 04:22:35 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 2 Nov 2007 04:22:35 +0100
+Subject: [dreamchess-svn-commits] r501 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711020322.lA23MZx7009607@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-02 04:22:29 +0100 (Fri, 02 Nov 2007)
+New Revision: 501
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl.c: Only reload textures on win32.
+
+
+
+
+From waltervn at berlios.de  Fri Nov  2 04:36:40 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 2 Nov 2007 04:36:40 +0100
+Subject: [dreamchess-svn-commits] r502 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711020336.lA23aebT010311@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-02 04:36:35 +0100 (Fri, 02 Nov 2007)
+New Revision: 502
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl.c: Fixed WM icon on win32.
+
+
+
+
+From waltervn at berlios.de  Sat Nov  3 04:06:00 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 3 Nov 2007 04:06:00 +0100
+Subject: [dreamchess-svn-commits] r503 - in dreamchess/trunk/src: .
+	gamegui_dialogs include ui_sdlgl
+Message-ID: <200711030306.lA33602H030319@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-03 04:05:57 +0100 (Sat, 03 Nov 2007)
+New Revision: 503
+
+Modified:
+   dreamchess/trunk/src/dreamchess.c
+   dreamchess/trunk/src/dreamchess.h
+   dreamchess/trunk/src/gamegui_dialogs/resolution.c
+   dreamchess/trunk/src/include/options.h
+   dreamchess/trunk/src/include/system_config.h
+   dreamchess/trunk/src/options.c
+   dreamchess/trunk/src/system_config.c
+   dreamchess/trunk/src/ui.h
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+Log:
+	* Added multisampling option. Added error recovery when setting video
+	mode.
+
+
+
+
+
+From waltervn at berlios.de  Sat Nov  3 04:22:30 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 3 Nov 2007 04:22:30 +0100
+Subject: [dreamchess-svn-commits] r504 - in dreamchess/trunk/src:
+	gamegui_dialogs include ui_sdlgl
+Message-ID: <200711030322.lA33MUAh031070@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-03 04:22:28 +0100 (Sat, 03 Nov 2007)
+New Revision: 504
+
+Modified:
+   dreamchess/trunk/src/gamegui_dialogs/resolution.c
+   dreamchess/trunk/src/include/gamegui_dialogs.h
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+Log:
+	* src/gamegui_dialog/resolution.c, src/include/gamegui_dialogs.c,
+	src/ui_sdlgl/ui_sdlgl.c: Added startup dialog when reverting to
+	default video mode.
+
+
+
+
+
+From waltervn at berlios.de  Sat Nov  3 16:15:44 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 3 Nov 2007 16:15:44 +0100
+Subject: [dreamchess-svn-commits] r505 - in dreamchess/trunk/src: .
+	gamegui_dialogs include ui_sdlgl
+Message-ID: <200711031515.lA3FFihx005713@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-03 16:15:42 +0100 (Sat, 03 Nov 2007)
+New Revision: 505
+
+Modified:
+   dreamchess/trunk/src/dreamchess.c
+   dreamchess/trunk/src/gamegui_dialogs/resolution.c
+   dreamchess/trunk/src/include/gamegui_dialogs.h
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+Log:
+	* src/dreamchess.c, src/gamegui_dialogs/resolution.c,
+	src/include/gamegui_dialogs.h, src/ui_sdlgl/ui_sdlgl.c: Popup restart
+	notice.
+
+
+
+
+
+From waltervn at berlios.de  Sat Nov  3 19:53:10 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 3 Nov 2007 19:53:10 +0100
+Subject: [dreamchess-svn-commits] r506 - in dreamchess/trunk: . src
+	src/audio src/ui_sdlgl
+Message-ID: <200711031853.lA3IrA2q001467@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-03 19:53:07 +0100 (Sat, 03 Nov 2007)
+New Revision: 506
+
+Modified:
+   dreamchess/trunk/configure.ac
+   dreamchess/trunk/src/Makefile.am
+   dreamchess/trunk/src/audio/sdlmixer.c
+   dreamchess/trunk/src/ui_sdlgl/Makefile.am
+Log:
+	* src/audio/sdlmixer.c, src/ui_sdlgl/Makefile.am, src/Makefile.am,
+	configure.ac: Fixed building without SDL. Closes bug #8928.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov  4 04:27:52 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 4 Nov 2007 04:27:52 +0100
+Subject: [dreamchess-svn-commits] r507 - in dreamchess/trunk/src: . include
+Message-ID: <200711040327.lA43Rqqb020208@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-04 04:27:49 +0100 (Sun, 04 Nov 2007)
+New Revision: 507
+
+Modified:
+   dreamchess/trunk/src/include/theme.h
+   dreamchess/trunk/src/theme.c
+Log:
+	* src/theme.c, src/include/theme.h: Brought back code from the
+	initial theme rewrite.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov  4 12:52:34 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 4 Nov 2007 12:52:34 +0100
+Subject: [dreamchess-svn-commits] r508 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711041152.lA4BqYXB006636@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-04 12:52:32 +0100 (Sun, 04 Nov 2007)
+New Revision: 508
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl.c: Removed "Press any key" message.
+
+
+
+
+
+From waltervn at berlios.de  Tue Nov  6 01:32:08 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 6 Nov 2007 01:32:08 +0100
+Subject: [dreamchess-svn-commits] r509 - in dreamchess/trunk/src: .
+	gamegui_dialogs ui_sdlgl
+Message-ID: <200711060032.lA60W8Ax030655@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-06 01:32:04 +0100 (Tue, 06 Nov 2007)
+New Revision: 509
+
+Modified:
+   dreamchess/trunk/src/gamegui_dialogs/ingame_dialog.c
+   dreamchess/trunk/src/gamegui_dialogs/quit_dialog.c
+   dreamchess/trunk/src/gamegui_dialogs/system_dialog.c
+   dreamchess/trunk/src/system_config.c
+   dreamchess/trunk/src/ui_sdlgl/saveload_dialog.c
+   dreamchess/trunk/src/ui_sdlgl/title_dialog.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.h
+Log:
+	* Added level and other game options to system config. Make dialog
+	layout more consistent.
+
+
+
+
+
+From waltervn at berlios.de  Tue Nov  6 21:48:22 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 6 Nov 2007 21:48:22 +0100
+Subject: [dreamchess-svn-commits] r510 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711062048.lA6KmMsv030535@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-11-06 21:48:21 +0100 (Tue, 06 Nov 2007)
+New Revision: 510
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* Fixed an alpha ordering issue with alpha blended pieces.
+
+
+
+
+
+From waltervn at berlios.de  Tue Nov  6 21:52:11 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 6 Nov 2007 21:52:11 +0100
+Subject: [dreamchess-svn-commits] r511 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711062052.lA6KqBgX030671@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-11-06 21:52:11 +0100 (Tue, 06 Nov 2007)
+New Revision: 511
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* Selector no longer appears until a key is pressed.
+
+
+
+
+
+From waltervn at berlios.de  Wed Nov  7 23:56:49 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 7 Nov 2007 23:56:49 +0100
+Subject: [dreamchess-svn-commits] r512 - in dreamchess/trunk: data/pieces
+	data/pieces/classichigh data/themes src
+Message-ID: <200711072256.lA7MunqH011883@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-07 23:56:38 +0100 (Wed, 07 Nov 2007)
+New Revision: 512
+
+Added:
+   dreamchess/trunk/data/pieces/classichigh/
+   dreamchess/trunk/data/pieces/classichigh/bishop.dcm
+   dreamchess/trunk/data/pieces/classichigh/black.png
+   dreamchess/trunk/data/pieces/classichigh/king.dcm
+   dreamchess/trunk/data/pieces/classichigh/knight.dcm
+   dreamchess/trunk/data/pieces/classichigh/pawn.dcm
+   dreamchess/trunk/data/pieces/classichigh/queen.dcm
+   dreamchess/trunk/data/pieces/classichigh/rook.dcm
+   dreamchess/trunk/data/pieces/classichigh/selector.png
+   dreamchess/trunk/data/pieces/classichigh/set.cfg
+   dreamchess/trunk/data/pieces/classichigh/white.png
+Modified:
+   dreamchess/trunk/data/themes/default.xml
+   dreamchess/trunk/src/theme.c
+Log:
+	* Added WIP Classic Wooden HQ theme.
+
+
+
+
+
+From waltervn at berlios.de  Thu Nov  8 02:51:32 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 8 Nov 2007 02:51:32 +0100
+Subject: [dreamchess-svn-commits] r513 - in dreamchess/trunk:
+	data/boards/sketch data/pieces/classicbw
+	data/pieces/classiclow data/pieces/elements
+	data/pieces/figurine data/pieces/metal data/pieces/sketch
+	src/ui_sdlgl
+Message-ID: <200711080151.lA81pWSj014592@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-11-08 02:51:12 +0100 (Thu, 08 Nov 2007)
+New Revision: 513
+
+Modified:
+   dreamchess/trunk/data/boards/sketch/board.png
+   dreamchess/trunk/data/pieces/classicbw/selector.png
+   dreamchess/trunk/data/pieces/classiclow/selector.png
+   dreamchess/trunk/data/pieces/elements/selector.png
+   dreamchess/trunk/data/pieces/figurine/selector.png
+   dreamchess/trunk/data/pieces/metal/selector.png
+   dreamchess/trunk/data/pieces/sketch/knight_b.png
+   dreamchess/trunk/data/pieces/sketch/knight_w.png
+   dreamchess/trunk/data/pieces/sketch/pawn_b.png
+   dreamchess/trunk/data/pieces/sketch/pawn_w.png
+   dreamchess/trunk/data/pieces/sketch/selector.png
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* Lighting on pieces. Updated bits of Sketch, and selectors.
+
+
+
+
+
+From waltervn at berlios.de  Thu Nov  8 02:55:13 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 8 Nov 2007 02:55:13 +0100
+Subject: [dreamchess-svn-commits] r514 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711080155.lA81tD2S014758@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-11-08 02:55:12 +0100 (Thu, 08 Nov 2007)
+New Revision: 514
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* Fixed lighting on 2D boards.
+
+
+
+
+
+From waltervn at berlios.de  Fri Nov  9 00:43:05 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 9 Nov 2007 00:43:05 +0100
+Subject: [dreamchess-svn-commits] r515 - tools/trunk/data/models
+Message-ID: <200711082343.lA8Nh5VE021457@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-09 00:42:57 +0100 (Fri, 09 Nov 2007)
+New Revision: 515
+
+Added:
+   tools/trunk/data/models/classichigh.blend
+Log:
+	* Blender file for classic high models.
+
+
+
+
+
+From waltervn at berlios.de  Fri Nov  9 00:43:58 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 9 Nov 2007 00:43:58 +0100
+Subject: [dreamchess-svn-commits] r516 -
+	dreamchess/trunk/data/pieces/classichigh
+Message-ID: <200711082343.lA8Nhw6f022964@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-09 00:43:52 +0100 (Fri, 09 Nov 2007)
+New Revision: 516
+
+Modified:
+   dreamchess/trunk/data/pieces/classichigh/bishop.dcm
+   dreamchess/trunk/data/pieces/classichigh/king.dcm
+   dreamchess/trunk/data/pieces/classichigh/knight.dcm
+   dreamchess/trunk/data/pieces/classichigh/pawn.dcm
+   dreamchess/trunk/data/pieces/classichigh/queen.dcm
+   dreamchess/trunk/data/pieces/classichigh/rook.dcm
+Log:
+	* data/pieces/classichigh: Set updated.
+
+
+
+
+
+From waltervn at berlios.de  Fri Nov  9 01:17:58 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 9 Nov 2007 01:17:58 +0100
+Subject: [dreamchess-svn-commits] r517 -
+	dreamchess/trunk/data/pieces/classichigh
+Message-ID: <200711090017.lA90HwHU011046@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-09 01:17:54 +0100 (Fri, 09 Nov 2007)
+New Revision: 517
+
+Modified:
+   dreamchess/trunk/data/pieces/classichigh/knight.dcm
+Log:
+	* New classic high knight.
+
+
+
+
+
+From waltervn at berlios.de  Fri Nov  9 01:36:31 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 9 Nov 2007 01:36:31 +0100
+Subject: [dreamchess-svn-commits] r518 - tools/trunk/data/models
+Message-ID: <200711090036.lA90aVB3012429@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-09 01:36:29 +0100 (Fri, 09 Nov 2007)
+New Revision: 518
+
+Modified:
+   tools/trunk/data/models/classichigh.blend
+Log:
+	* Updated blender file of classic high.
+
+
+
+
+
+From waltervn at berlios.de  Fri Nov  9 04:14:51 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 9 Nov 2007 04:14:51 +0100
+Subject: [dreamchess-svn-commits] r519 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711090314.lA93EpGM028518@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-09 04:14:50 +0100 (Fri, 09 Nov 2007)
+New Revision: 519
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl_3d.c: New light values.
+
+
+
+
+
+From waltervn at berlios.de  Fri Nov  9 04:29:01 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 9 Nov 2007 04:29:01 +0100
+Subject: [dreamchess-svn-commits] r520 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711090329.lA93T1YP029251@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-09 04:28:58 +0100 (Fri, 09 Nov 2007)
+New Revision: 520
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl_3d.c: Move reflected pieces below the board.
+
+
+
+
+
+From waltervn at berlios.de  Fri Nov  9 18:53:53 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 9 Nov 2007 18:53:53 +0100
+Subject: [dreamchess-svn-commits] r521 - in dreamchess/trunk: data/boards
+	data/boards/flat data/boards/sketch data/themes src/ui_sdlgl
+Message-ID: <200711091753.lA9HrrrP009463@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-09 18:53:43 +0100 (Fri, 09 Nov 2007)
+New Revision: 521
+
+Added:
+   dreamchess/trunk/data/boards/flat/
+   dreamchess/trunk/data/boards/flat/board.dcm
+   dreamchess/trunk/data/boards/flat/board.png
+Modified:
+   dreamchess/trunk/data/boards/sketch/board.dcm
+   dreamchess/trunk/data/themes/default.xml
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* data/: Removed border of flat themes.
+
+	* src/ui_sdlgl/ui_sdlgl_3d.c: Changed some of the lighting code.
+
+
+
+
+
+From waltervn at berlios.de  Fri Nov  9 19:33:18 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 9 Nov 2007 19:33:18 +0100
+Subject: [dreamchess-svn-commits] r522 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711091833.lA9IXIO2023004@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-09 19:33:16 +0100 (Fri, 09 Nov 2007)
+New Revision: 522
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl_3d.c: More cleanup to the lighting code
+	(WIP).
+
+
+
+
+
+From waltervn at berlios.de  Fri Nov  9 19:53:58 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 9 Nov 2007 19:53:58 +0100
+Subject: [dreamchess-svn-commits] r523 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711091853.lA9Irw86024514@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-09 19:53:57 +0100 (Fri, 09 Nov 2007)
+New Revision: 523
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl_3d.c: Fixed reflection bug.
+
+
+
+
+
+From waltervn at berlios.de  Fri Nov  9 20:28:15 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 9 Nov 2007 20:28:15 +0100
+Subject: [dreamchess-svn-commits] r524 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711091928.lA9JSFZo027085@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-11-09 20:28:14 +0100 (Fri, 09 Nov 2007)
+New Revision: 524
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* Toying with lighting. Uh oh!
+
+
+
+
+
+From waltervn at berlios.de  Fri Nov  9 21:42:18 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 9 Nov 2007 21:42:18 +0100
+Subject: [dreamchess-svn-commits] r525 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711092042.lA9KgICo001409@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-11-09 21:42:18 +0100 (Fri, 09 Nov 2007)
+New Revision: 525
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* Clipped a fingernail.
+
+
+
+
+
+From waltervn at berlios.de  Sat Nov 10 01:27:50 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 10 Nov 2007 01:27:50 +0100
+Subject: [dreamchess-svn-commits] r526 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711100027.lAA0Roh2005033@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-10 01:27:49 +0100 (Sat, 10 Nov 2007)
+New Revision: 526
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl_3d.c: Now uses vertex arrays.
+
+
+
+
+
+From waltervn at berlios.de  Sat Nov 10 02:27:46 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 10 Nov 2007 02:27:46 +0100
+Subject: [dreamchess-svn-commits] r527 - in dreamchess/trunk: data/pieces
+	data/pieces/elementshigh data/themes src/ui_sdlgl
+Message-ID: <200711100127.lAA1Rk6e010797@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-10 02:27:39 +0100 (Sat, 10 Nov 2007)
+New Revision: 527
+
+Added:
+   dreamchess/trunk/data/pieces/elementshigh/
+   dreamchess/trunk/data/pieces/elementshigh/bishop.dcm
+   dreamchess/trunk/data/pieces/elementshigh/black.png
+   dreamchess/trunk/data/pieces/elementshigh/king.dcm
+   dreamchess/trunk/data/pieces/elementshigh/knight.dcm
+   dreamchess/trunk/data/pieces/elementshigh/pawn.dcm
+   dreamchess/trunk/data/pieces/elementshigh/queen.dcm
+   dreamchess/trunk/data/pieces/elementshigh/rook.dcm
+   dreamchess/trunk/data/pieces/elementshigh/selector.png
+   dreamchess/trunk/data/pieces/elementshigh/set.cfg
+   dreamchess/trunk/data/pieces/elementshigh/white.png
+   dreamchess/trunk/data/pieces/elementslow/
+Removed:
+   dreamchess/trunk/data/pieces/elements/
+Modified:
+   dreamchess/trunk/data/themes/elements.xml
+   dreamchess/trunk/src/ui_sdlgl/theme.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl/theme.c: Fixed error printing.
+
+	* src/ui_sdlgl_3d.c: Fixed texture spin.
+
+	* data/: Added HQ elements theme.
+
+
+
+
+
+From waltervn at berlios.de  Sat Nov 10 03:31:53 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 10 Nov 2007 03:31:53 +0100
+Subject: [dreamchess-svn-commits] r528 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711100231.lAA2Vrdk019777@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-10 03:31:52 +0100 (Sat, 10 Nov 2007)
+New Revision: 528
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl_3d.c: Another speed-up attempt.
+
+
+
+
+
+From waltervn at berlios.de  Sat Nov 10 03:44:30 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 10 Nov 2007 03:44:30 +0100
+Subject: [dreamchess-svn-commits] r529 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711100244.lAA2iUoT020993@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-10 03:44:26 +0100 (Sat, 10 Nov 2007)
+New Revision: 529
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl_3d.c: Speed-up attempt #3.
+
+
+
+
+
+From waltervn at berlios.de  Sat Nov 10 04:28:45 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 10 Nov 2007 04:28:45 +0100
+Subject: [dreamchess-svn-commits] r530 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711100328.lAA3SjAB024128@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-10 04:28:43 +0100 (Sat, 10 Nov 2007)
+New Revision: 530
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl_3d.c: Attempt #4.
+
+
+
+
+
+From waltervn at berlios.de  Sat Nov 10 04:43:53 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 10 Nov 2007 04:43:53 +0100
+Subject: [dreamchess-svn-commits] r531 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711100343.lAA3hrJU024791@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-10 04:43:51 +0100 (Sat, 10 Nov 2007)
+New Revision: 531
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl_3d.c: Attempt #5.
+
+
+
+
+
+From waltervn at berlios.de  Sat Nov 10 05:46:01 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 10 Nov 2007 05:46:01 +0100
+Subject: [dreamchess-svn-commits] r532 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711100446.lAA4k1KO026996@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-10 05:45:59 +0100 (Sat, 10 Nov 2007)
+New Revision: 532
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl_3d.c: Use DrawRangeElements.
+
+
+
+
+
+From waltervn at berlios.de  Sat Nov 10 20:52:00 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 10 Nov 2007 20:52:00 +0100
+Subject: [dreamchess-svn-commits] r533 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711101952.lAAJq0Wc006165@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-10 20:51:56 +0100 (Sat, 10 Nov 2007)
+New Revision: 533
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/draw_scene.c
+   dreamchess/trunk/src/ui_sdlgl/ingame_ui.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl: Switched back to display lists. Some minor changes
+	to OpenGL code.
+
+
+
+
+
+From waltervn at berlios.de  Sat Nov 10 20:56:07 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 10 Nov 2007 20:56:07 +0100
+Subject: [dreamchess-svn-commits] r534 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711101956.lAAJu7u5006451@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-10 20:56:06 +0100 (Sat, 10 Nov 2007)
+New Revision: 534
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl.c: Enabled reflections again.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov 11 00:02:58 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 11 Nov 2007 00:02:58 +0100
+Subject: [dreamchess-svn-commits] r535 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711102302.lAAN2wwH018744@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-11 00:02:57 +0100 (Sun, 11 Nov 2007)
+New Revision: 535
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl_3d.c: Put immediate rendering code back in for
+	texture spin.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov 11 04:04:39 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 11 Nov 2007 04:04:39 +0100
+Subject: [dreamchess-svn-commits] r536 - in dreamchess/trunk/data/boards:
+	classic elements metal
+Message-ID: <200711110304.lAB34dwP022014@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-11 04:04:37 +0100 (Sun, 11 Nov 2007)
+New Revision: 536
+
+Modified:
+   dreamchess/trunk/data/boards/classic/board.dcm
+   dreamchess/trunk/data/boards/elements/board.dcm
+   dreamchess/trunk/data/boards/metal/board.dcm
+Log:
+	* data/boards/: Removed chess board ridge.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov 11 04:47:17 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 11 Nov 2007 04:47:17 +0100
+Subject: [dreamchess-svn-commits] r537 - in dreamchess/trunk: . data/pieces
+	data/pieces/classicbw data/pieces/metal data/themes src
+Message-ID: <200711110347.lAB3lHU4024187@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-11 04:46:54 +0100 (Sun, 11 Nov 2007)
+New Revision: 537
+
+Added:
+   dreamchess/trunk/data/pieces/classic/
+   dreamchess/trunk/data/pieces/elements/
+Removed:
+   dreamchess/trunk/data/pieces/classichigh/
+   dreamchess/trunk/data/pieces/classiclow/
+   dreamchess/trunk/data/pieces/elementshigh/
+   dreamchess/trunk/data/pieces/elementslow/
+Modified:
+   dreamchess/trunk/NEWS
+   dreamchess/trunk/data/pieces/classicbw/bishop.dcm
+   dreamchess/trunk/data/pieces/classicbw/king.dcm
+   dreamchess/trunk/data/pieces/classicbw/knight.dcm
+   dreamchess/trunk/data/pieces/classicbw/pawn.dcm
+   dreamchess/trunk/data/pieces/classicbw/queen.dcm
+   dreamchess/trunk/data/pieces/classicbw/rook.dcm
+   dreamchess/trunk/data/pieces/metal/bishop.dcm
+   dreamchess/trunk/data/pieces/metal/king.dcm
+   dreamchess/trunk/data/pieces/metal/knight.dcm
+   dreamchess/trunk/data/pieces/metal/pawn.dcm
+   dreamchess/trunk/data/pieces/metal/queen.dcm
+   dreamchess/trunk/data/pieces/metal/rook.dcm
+   dreamchess/trunk/data/themes/default.xml
+   dreamchess/trunk/data/themes/elements.xml
+   dreamchess/trunk/src/theme.c
+Log:
+	* src/theme.c, data/: Removed low quality themes.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov 11 04:54:26 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 11 Nov 2007 04:54:26 +0100
+Subject: [dreamchess-svn-commits] r538 - in dreamchess/trunk: . src
+Message-ID: <200711110354.lAB3sQBL024505@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-11 04:54:24 +0100 (Sun, 11 Nov 2007)
+New Revision: 538
+
+Modified:
+   dreamchess/trunk/AUTHORS
+   dreamchess/trunk/src/credits.c
+Log:
+	* AUTHORS, src/credits.c: Added Lara.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov 11 05:43:20 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 11 Nov 2007 05:43:20 +0100
+Subject: [dreamchess-svn-commits] r539 - in dreamchess/trunk/src: . ui_sdlgl
+Message-ID: <200711110443.lAB4hKT7026373@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-11 05:43:19 +0100 (Sun, 11 Nov 2007)
+New Revision: 539
+
+Modified:
+   dreamchess/trunk/src/credits.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl_3d.c: Fixed lighting of 2D themes.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov 11 07:42:00 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 11 Nov 2007 07:42:00 +0100
+Subject: [dreamchess-svn-commits] r540 - in dreamchess/trunk: .
+	data/boards/sketch data/pieces/sketch data/styles/sketch src
+Message-ID: <200711110642.lAB6g0gV014824@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-11-11 07:41:23 +0100 (Sun, 11 Nov 2007)
+New Revision: 540
+
+Modified:
+   dreamchess/trunk/AUTHORS
+   dreamchess/trunk/COPYRIGHT
+   dreamchess/trunk/data/boards/sketch/board.dcm
+   dreamchess/trunk/data/boards/sketch/board.png
+   dreamchess/trunk/data/pieces/sketch/bishop_b.png
+   dreamchess/trunk/data/pieces/sketch/bishop_w.png
+   dreamchess/trunk/data/pieces/sketch/king_b.png
+   dreamchess/trunk/data/pieces/sketch/king_w.png
+   dreamchess/trunk/data/pieces/sketch/knight_b.png
+   dreamchess/trunk/data/pieces/sketch/pawn_b.png
+   dreamchess/trunk/data/pieces/sketch/queen_b.png
+   dreamchess/trunk/data/pieces/sketch/queen_w.png
+   dreamchess/trunk/data/pieces/sketch/rook_b.png
+   dreamchess/trunk/data/pieces/sketch/rook_w.png
+   dreamchess/trunk/data/styles/sketch/backdrop.png
+   dreamchess/trunk/data/styles/sketch/border.png
+   dreamchess/trunk/data/styles/sketch/mouse_cursor.png
+   dreamchess/trunk/data/styles/sketch/pieces.png
+   dreamchess/trunk/src/credits.c
+Log:
+	* Updated Sketch theme. Add theme sketch author to AUTHORS.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov 11 19:30:48 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 11 Nov 2007 19:30:48 +0100
+Subject: [dreamchess-svn-commits] r541 - dreamchess/trunk/src/ui_sdlgl
+Message-ID: <200711111830.lABIUmtU027523@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-11 19:30:05 +0100 (Sun, 11 Nov 2007)
+New Revision: 541
+
+Modified:
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl_3d.c: Fixed transparancies (again...).
+
+
+
+
+
+From waltervn at berlios.de  Mon Nov 12 04:22:45 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 12 Nov 2007 04:22:45 +0100
+Subject: [dreamchess-svn-commits] r542 - in dreamchess/trunk:
+	data/boards/classic data/pieces/classic src/ui_sdlgl
+Message-ID: <200711120322.lAC3MjE4003359@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-12 04:22:20 +0100 (Mon, 12 Nov 2007)
+New Revision: 542
+
+Modified:
+   dreamchess/trunk/data/boards/classic/board.png
+   dreamchess/trunk/data/pieces/classic/black.png
+   dreamchess/trunk/data/pieces/classic/white.png
+   dreamchess/trunk/src/ui_sdlgl/system.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* data/pieces: New classic theme.
+
+
+
+
+
+From waltervn at berlios.de  Mon Nov 12 05:40:13 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 12 Nov 2007 05:40:13 +0100
+Subject: [dreamchess-svn-commits] r543 - dreamchess/trunk/data/pieces/classic
+Message-ID: <200711120440.lAC4eDGO007471@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-12 05:40:10 +0100 (Mon, 12 Nov 2007)
+New Revision: 543
+
+Modified:
+   dreamchess/trunk/data/pieces/classic/bishop.dcm
+   dreamchess/trunk/data/pieces/classic/king.dcm
+   dreamchess/trunk/data/pieces/classic/knight.dcm
+   dreamchess/trunk/data/pieces/classic/rook.dcm
+Log:
+	* data/pieces/classic: Fixed sharp edges.
+
+
+
+
+
+From waltervn at berlios.de  Mon Nov 12 18:34:56 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 12 Nov 2007 18:34:56 +0100
+Subject: [dreamchess-svn-commits] r544 - in dreamchess/trunk:
+	data/pieces/classic data/styles/default src/ui_sdlgl
+Message-ID: <200711121734.lACHYuuD007735@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-12 18:34:45 +0100 (Mon, 12 Nov 2007)
+New Revision: 544
+
+Modified:
+   dreamchess/trunk/data/pieces/classic/knight.dcm
+   dreamchess/trunk/data/pieces/classic/selector.png
+   dreamchess/trunk/data/styles/default/pieces.png
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* Updated classic wooden theme.
+
+
+
+
+
+From waltervn at berlios.de  Mon Nov 12 19:45:12 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 12 Nov 2007 19:45:12 +0100
+Subject: [dreamchess-svn-commits] r545 - in dreamchess/trunk:
+	data/boards/flat data/styles data/styles/flat data/themes
+	src/ui_sdlgl
+Message-ID: <200711121845.lACIjCD0018125@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-12 19:45:02 +0100 (Mon, 12 Nov 2007)
+New Revision: 545
+
+Added:
+   dreamchess/trunk/data/styles/flat/
+   dreamchess/trunk/data/styles/flat/pieces.png
+Removed:
+   dreamchess/trunk/data/styles/flat/pieces.png
+Modified:
+   dreamchess/trunk/data/boards/flat/board.png
+   dreamchess/trunk/data/themes/default.xml
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* data/: Updated figurine theme.
+
+
+
+
+
+From waltervn at berlios.de  Mon Nov 12 20:08:45 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 12 Nov 2007 20:08:45 +0100
+Subject: [dreamchess-svn-commits] r546 - in dreamchess/trunk:
+	data/pieces/figurine data/themes src
+Message-ID: <200711121908.lACJ8jwW019372@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-12 20:08:43 +0100 (Mon, 12 Nov 2007)
+New Revision: 546
+
+Modified:
+   dreamchess/trunk/data/pieces/figurine/selector.png
+   dreamchess/trunk/data/themes/default.xml
+   dreamchess/trunk/src/theme.c
+Log:
+	* data/: Changed figurine theme selector.
+
+
+
+
+
+From waltervn at berlios.de  Mon Nov 12 20:14:20 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 12 Nov 2007 20:14:20 +0100
+Subject: [dreamchess-svn-commits] r547 - in dreamchess/trunk/data: boards
+	pieces styles themes
+Message-ID: <200711121914.lACJEK7a019621@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-12 20:14:14 +0100 (Mon, 12 Nov 2007)
+New Revision: 547
+
+Added:
+   dreamchess/trunk/data/themes/metal.xml
+Removed:
+   dreamchess/trunk/data/boards/metal/
+   dreamchess/trunk/data/pieces/classicbw/
+   dreamchess/trunk/data/pieces/metal/
+   dreamchess/trunk/data/styles/metal/
+   dreamchess/trunk/data/themes/metal.xml
+Modified:
+   dreamchess/trunk/data/themes/default.xml
+Log:
+	* Removed marble and metal themes.
+
+
+
+
+
+From waltervn at berlios.de  Mon Nov 12 20:45:04 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 12 Nov 2007 20:45:04 +0100
+Subject: [dreamchess-svn-commits] r548 - in dreamchess/trunk:
+	data/pieces/sketch data/themes src/ui_sdlgl
+Message-ID: <200711121945.lACJj4cl021885@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-12 20:45:00 +0100 (Mon, 12 Nov 2007)
+New Revision: 548
+
+Modified:
+   dreamchess/trunk/data/pieces/sketch/selector.png
+   dreamchess/trunk/data/themes/sketch.xml
+   dreamchess/trunk/src/ui_sdlgl/system.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* Moved pieces and seletor closer to the board.
+
+
+
+
+
+From waltervn at berlios.de  Mon Nov 12 22:08:36 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 12 Nov 2007 22:08:36 +0100
+Subject: [dreamchess-svn-commits] r549 - in dreamchess/trunk:
+	data/pieces/elements data/themes src src/include src/ui_sdlgl
+Message-ID: <200711122108.lACL8amI032239@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-12 22:08:28 +0100 (Mon, 12 Nov 2007)
+New Revision: 549
+
+Modified:
+   dreamchess/trunk/data/pieces/elements/bishop.dcm
+   dreamchess/trunk/data/pieces/elements/king.dcm
+   dreamchess/trunk/data/pieces/elements/knight.dcm
+   dreamchess/trunk/data/pieces/elements/rook.dcm
+   dreamchess/trunk/data/themes/default.xml
+   dreamchess/trunk/data/themes/elements.xml
+   dreamchess/trunk/data/themes/sketch.xml
+   dreamchess/trunk/src/include/theme.h
+   dreamchess/trunk/src/theme.c
+   dreamchess/trunk/src/ui_sdlgl/theme.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.h
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* Remove texture spin.
+
+
+
+
+
+From waltervn at berlios.de  Mon Nov 12 22:47:32 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 12 Nov 2007 22:47:32 +0100
+Subject: [dreamchess-svn-commits] r550 - in dreamchess/trunk/data/pieces:
+	elements sketch
+Message-ID: <200711122147.lACLlWms006281@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-11-12 22:47:31 +0100 (Mon, 12 Nov 2007)
+New Revision: 550
+
+Modified:
+   dreamchess/trunk/data/pieces/elements/black.png
+   dreamchess/trunk/data/pieces/elements/white.png
+   dreamchess/trunk/data/pieces/sketch/pawn_b.png
+Log:
+	* Fixed the sketch pawn. Tweaked elements piece textures.
+
+
+
+
+
+From waltervn at berlios.de  Tue Nov 13 00:13:12 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 13 Nov 2007 00:13:12 +0100
+Subject: [dreamchess-svn-commits] r551 - in tools/trunk/data: models xcf
+Message-ID: <200711122313.lACNDCj6011129@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-13 00:10:36 +0100 (Tue, 13 Nov 2007)
+New Revision: 551
+
+Modified:
+   tools/trunk/data/models/board.blend
+   tools/trunk/data/models/classichigh.blend
+   tools/trunk/data/xcf/default-board.xcf
+Log:
+	* Updated models.
+
+
+
+
+
+From waltervn at berlios.de  Tue Nov 13 02:13:27 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 13 Nov 2007 02:13:27 +0100
+Subject: [dreamchess-svn-commits] r552 - tools/trunk/src
+Message-ID: <200711130113.lAD1DRd3001997@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-13 02:13:25 +0100 (Tue, 13 Nov 2007)
+New Revision: 552
+
+Modified:
+   tools/trunk/src/dcmstrip.cpp
+   tools/trunk/src/ttf2png.c
+Log:
+	* src/ttf2png.c: Now inserts figurines from separate chess font.
+
+	* src/dcmstrip.cpp: Added option for vertex cache size.
+
+
+
+
+
+From waltervn at berlios.de  Tue Nov 13 02:16:55 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 13 Nov 2007 02:16:55 +0100
+Subject: [dreamchess-svn-commits] r553 - in dreamchess/trunk: data
+	src/libs/gamegui src/ui_sdlgl
+Message-ID: <200711130116.lAD1Gtb6002572@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-13 02:16:50 +0100 (Tue, 13 Nov 2007)
+New Revision: 553
+
+Modified:
+   dreamchess/trunk/data/font.png
+   dreamchess/trunk/data/font.wid
+   dreamchess/trunk/src/libs/gamegui/system.c
+   dreamchess/trunk/src/ui_sdlgl/saveload_dialog.c
+   dreamchess/trunk/src/ui_sdlgl/text.c
+Log:
+	* New font.
+
+	* Turned off shadow of chess pieces in saveload dialog.
+
+
+
+
+
+From waltervn at berlios.de  Tue Nov 13 03:01:47 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 13 Nov 2007 03:01:47 +0100
+Subject: [dreamchess-svn-commits] r554 - in dreamchess/trunk/src: .
+	gamegui_dialogs
+Message-ID: <200711130201.lAD21lf5004746@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-13 03:01:44 +0100 (Tue, 13 Nov 2007)
+New Revision: 554
+
+Modified:
+   dreamchess/trunk/src/comm.h
+   dreamchess/trunk/src/comm_sdlthd.c
+   dreamchess/trunk/src/comm_unix.c
+   dreamchess/trunk/src/comm_win32.c
+   dreamchess/trunk/src/dreamchess.c
+   dreamchess/trunk/src/gamegui_dialogs/configuration.c
+Log:
+	* Added more spacing to config dialog.
+
+
+
+
+
+From waltervn at berlios.de  Tue Nov 13 03:08:54 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 13 Nov 2007 03:08:54 +0100
+Subject: [dreamchess-svn-commits] r555 - dreamchess/trunk
+Message-ID: <200711130208.lAD28sc7004948@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-13 03:08:52 +0100 (Tue, 13 Nov 2007)
+New Revision: 555
+
+Modified:
+   dreamchess/trunk/AUTHORS
+   dreamchess/trunk/NEWS
+Log:
+	* Updated AUTHORS and NEWS.
+
+
+
+
+
+From waltervn at berlios.de  Tue Nov 13 15:14:35 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 13 Nov 2007 15:14:35 +0100
+Subject: [dreamchess-svn-commits] r556 - in dreamchess/trunk: data
+	data/boards/flat src/ui_sdlgl
+Message-ID: <200711131414.lADEEZDI007425@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-13 15:14:30 +0100 (Tue, 13 Nov 2007)
+New Revision: 556
+
+Modified:
+   dreamchess/trunk/data/boards/flat/board.png
+   dreamchess/trunk/data/font.png
+   dreamchess/trunk/data/font.wid
+   dreamchess/trunk/src/ui_sdlgl/text.c
+Log:
+	* Switching back to size 16 VeraBd, but with 1 pixel spacing between
+	the characters.
+
+	* Changed figurine board colours.
+
+
+
+
+
+From waltervn at berlios.de  Tue Nov 13 16:53:20 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 13 Nov 2007 16:53:20 +0100
+Subject: [dreamchess-svn-commits] r557 - in dreamchess/trunk: .
+	DreamChess.xcodeproj English.lproj data src src/macosx
+Message-ID: <200711131553.lADFrKbW014248@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-13 16:53:10 +0100 (Tue, 13 Nov 2007)
+New Revision: 557
+
+Added:
+   dreamchess/trunk/DreamChess.xcodeproj/
+   dreamchess/trunk/DreamChess.xcodeproj/Makefile.am
+   dreamchess/trunk/DreamChess.xcodeproj/project.pbxproj
+   dreamchess/trunk/English.lproj/
+   dreamchess/trunk/English.lproj/InfoPlist.strings
+   dreamchess/trunk/English.lproj/Makefile.am
+   dreamchess/trunk/Info.plist
+   dreamchess/trunk/data/icon.icns
+   dreamchess/trunk/src/macosx/
+   dreamchess/trunk/src/macosx/Makefile.am
+   dreamchess/trunk/src/macosx/SDLMain.h
+   dreamchess/trunk/src/macosx/SDLMain.m
+   dreamchess/trunk/src/macosx/config.h
+Removed:
+   dreamchess/trunk/DreamChess.xcodeproj/project.pbxproj
+   dreamchess/trunk/English.lproj/InfoPlist.strings
+   dreamchess/trunk/src/macosx/SDLMain.h
+   dreamchess/trunk/src/macosx/SDLMain.m
+   dreamchess/trunk/src/macosx/config.h
+Modified:
+   dreamchess/trunk/Makefile.am
+   dreamchess/trunk/configure.ac
+   dreamchess/trunk/src/Makefile.am
+   dreamchess/trunk/src/dir.c
+   dreamchess/trunk/src/main_sdlthd.c
+Log:
+	* Merged in r435:436 (OS X patch by BlueCrab).
+
+
+
+
+
+From waltervn at berlios.de  Wed Nov 14 17:47:48 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 14 Nov 2007 17:47:48 +0100
+Subject: [dreamchess-svn-commits] r558 - in dreamchess/trunk/src: . dreamer
+	gamegui_dialogs include libs libs/gamegui ui_sdlgl
+Message-ID: <200711141647.lAEGlmp3016308@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-14 17:47:42 +0100 (Wed, 14 Nov 2007)
+New Revision: 558
+
+Modified:
+   dreamchess/trunk/src/Makefile.am
+   dreamchess/trunk/src/comm_unix.c
+   dreamchess/trunk/src/comm_win32.c
+   dreamchess/trunk/src/dreamchess.c
+   dreamchess/trunk/src/dreamchess.h
+   dreamchess/trunk/src/dreamer/e_comm_unix.c
+   dreamchess/trunk/src/dreamer/e_comm_win32.c
+   dreamchess/trunk/src/gamegui_dialogs/message_dialog.c
+   dreamchess/trunk/src/include/gamegui_dialogs.h
+   dreamchess/trunk/src/include/pipe_unix.h
+   dreamchess/trunk/src/include/pipe_win32.h
+   dreamchess/trunk/src/libs/gamegui/system.c
+   dreamchess/trunk/src/libs/msgbuf.c
+   dreamchess/trunk/src/libs/pipe_unix.c
+   dreamchess/trunk/src/libs/pipe_win32.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+Log:
+	* Added error handling of engine not starting or quitting suddenly.
+
+
+
+
+
+From waltervn at berlios.de  Wed Nov 14 19:48:45 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 14 Nov 2007 19:48:45 +0100
+Subject: [dreamchess-svn-commits] r559 - in dreamchess/trunk/src: . include
+	libs
+Message-ID: <200711141848.lAEImjf5018389@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-14 19:48:38 +0100 (Wed, 14 Nov 2007)
+New Revision: 559
+
+Modified:
+   dreamchess/trunk/src/comm_win32.c
+   dreamchess/trunk/src/include/pipe_win32.h
+   dreamchess/trunk/src/libs/pipe_win32.c
+Log:
+	* Updated pipe routines for win32.
+
+
+
+
+From waltervn at berlios.de  Wed Nov 14 20:59:09 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 14 Nov 2007 20:59:09 +0100
+Subject: [dreamchess-svn-commits] r560 - in dreamchess/trunk: data/sounds
+	src/audio src/include
+Message-ID: <200711141959.lAEJx9Pv026823@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-14 20:58:44 +0100 (Wed, 14 Nov 2007)
+New Revision: 560
+
+Removed:
+   dreamchess/trunk/data/sounds/menu1.wav
+   dreamchess/trunk/data/sounds/menu2.wav
+Modified:
+   dreamchess/trunk/data/sounds/move1.wav
+   dreamchess/trunk/src/audio/sdlmixer.c
+   dreamchess/trunk/src/include/audio.h
+Log:
+	* Added a very basic move sound.
+
+
+
+
+From waltervn at berlios.de  Thu Nov 15 00:44:44 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 15 Nov 2007 00:44:44 +0100
+Subject: [dreamchess-svn-commits] r561 - dreamchess/trunk
+Message-ID: <200711142344.lAENiiZE017859@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-15 00:44:41 +0100 (Thu, 15 Nov 2007)
+New Revision: 561
+
+Modified:
+   dreamchess/trunk/NEWS
+   dreamchess/trunk/README
+   dreamchess/trunk/configure.ac
+Log:
+	* Set version to 0.2.0.
+
+
+
+
+
+From waltervn at berlios.de  Thu Nov 15 05:42:28 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 15 Nov 2007 05:42:28 +0100
+Subject: [dreamchess-svn-commits] r562 - in dreamchess/trunk:
+	DreamChess.xcodeproj src/macosx
+Message-ID: <200711150442.lAF4gSYr021225@sheep.berlios.de>
+
+Author: ljsebald
+Date: 2007-11-15 05:42:20 +0100 (Thu, 15 Nov 2007)
+New Revision: 562
+
+Modified:
+   dreamchess/trunk/DreamChess.xcodeproj/project.pbxproj
+   dreamchess/trunk/src/macosx/config.h
+Log:
+* Updated Mac OS X project files and config.h for 0.2.0
+
+
+
+
+
+From waltervn at berlios.de  Thu Nov 15 19:02:37 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 15 Nov 2007 19:02:37 +0100
+Subject: [dreamchess-svn-commits] r563 - tools/trunk/data/models
+Message-ID: <200711151802.lAFI2b2R026088@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-11-15 19:02:11 +0100 (Thu, 15 Nov 2007)
+New Revision: 563
+
+Added:
+   tools/trunk/data/models/elements.blend
+Log:
+	* Added blender file for elements theme.
+
+
+
+
+
+From waltervn at berlios.de  Thu Nov 15 19:04:05 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 15 Nov 2007 19:04:05 +0100
+Subject: [dreamchess-svn-commits] r564 -
+	dreamchess/trunk/data/pieces/elements
+Message-ID: <200711151804.lAFI45AK028703@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-11-15 19:03:53 +0100 (Thu, 15 Nov 2007)
+New Revision: 564
+
+Modified:
+   dreamchess/trunk/data/pieces/elements/bishop.dcm
+   dreamchess/trunk/data/pieces/elements/black.png
+   dreamchess/trunk/data/pieces/elements/king.dcm
+   dreamchess/trunk/data/pieces/elements/knight.dcm
+   dreamchess/trunk/data/pieces/elements/pawn.dcm
+   dreamchess/trunk/data/pieces/elements/queen.dcm
+   dreamchess/trunk/data/pieces/elements/rook.dcm
+Log:
+	* Updated UV coords on elements pieces.
+
+
+
+
+
+From waltervn at berlios.de  Thu Nov 15 23:06:42 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 15 Nov 2007 23:06:42 +0100
+Subject: [dreamchess-svn-commits] r565 - dreamchess/branches
+Message-ID: <200711152206.lAFM6g8p017218@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-15 23:06:42 +0100 (Thu, 15 Nov 2007)
+New Revision: 565
+
+Added:
+   dreamchess/branches/0.2/
+Log:
+	* Created branch for 0.2.
+
+
+
+
+
+From waltervn at berlios.de  Fri Nov 16 02:56:02 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 16 Nov 2007 02:56:02 +0100
+Subject: [dreamchess-svn-commits] r566 - dreamchess/trunk
+Message-ID: <200711160156.lAG1u2mo024577@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-16 02:56:01 +0100 (Fri, 16 Nov 2007)
+New Revision: 566
+
+Modified:
+   dreamchess/trunk/configure.ac
+Log:
+	* configure.ac: Set version to 0.3.0-SVN. Added SDL_net.
+
+
+
+
+
+From waltervn at berlios.de  Fri Nov 16 13:48:19 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 16 Nov 2007 13:48:19 +0100
+Subject: [dreamchess-svn-commits] r567 - dreamchess/branches/0.2/src/ui_sdlgl
+Message-ID: <200711161248.lAGCmJQF006812@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-16 13:48:18 +0100 (Fri, 16 Nov 2007)
+New Revision: 567
+
+Modified:
+   dreamchess/branches/0.2/src/ui_sdlgl/ui_sdlgl.h
+Log:
+	* src/ui_sdlgl/ui_sdlgl.h: Set FPS limit to 60 again.
+
+
+
+
+
+From waltervn at berlios.de  Sat Nov 17 01:09:42 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 17 Nov 2007 01:09:42 +0100
+Subject: [dreamchess-svn-commits] r568 - dreamchess/branches/0.2/src/ui_sdlgl
+Message-ID: <200711170009.lAH09gTf015745@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-11-17 01:09:18 +0100 (Sat, 17 Nov 2007)
+New Revision: 568
+
+Modified:
+   dreamchess/branches/0.2/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* Tweaked lighting.
+
+
+
+
+
+From waltervn at berlios.de  Sat Nov 17 04:02:02 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 17 Nov 2007 04:02:02 +0100
+Subject: [dreamchess-svn-commits] r569 - dreamchess/branches/0.2/src/ui_sdlgl
+Message-ID: <200711170302.lAH322Dg003343@sheep.berlios.de>
+
+Author: krismca
+Date: 2007-11-17 04:01:59 +0100 (Sat, 17 Nov 2007)
+New Revision: 569
+
+Modified:
+   dreamchess/branches/0.2/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* Yet more lighting tweaks.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov 18 00:19:37 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 18 Nov 2007 00:19:37 +0100
+Subject: [dreamchess-svn-commits] r570 - dreamchess/branches/0.2/src/ui_sdlgl
+Message-ID: <200711172319.lAHNJb39001356@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-18 00:19:36 +0100 (Sun, 18 Nov 2007)
+New Revision: 570
+
+Modified:
+   dreamchess/branches/0.2/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl_3d.c: Turned off specular reflection for the
+	board.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov 18 00:38:43 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 18 Nov 2007 00:38:43 +0100
+Subject: [dreamchess-svn-commits] r571 - dreamchess/branches/0.2/data/sounds
+Message-ID: <200711172338.lAHNchuQ024484@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-18 00:38:37 +0100 (Sun, 18 Nov 2007)
+New Revision: 571
+
+Modified:
+   dreamchess/branches/0.2/data/sounds/move1.wav
+Log:
+	* data/sounds/move1.wav: Replaced move sound.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov 18 02:07:10 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 18 Nov 2007 02:07:10 +0100
+Subject: [dreamchess-svn-commits] r572 - dreamchess/branches/0.2
+Message-ID: <200711180107.lAI17AKA025778@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-18 02:07:07 +0100 (Sun, 18 Nov 2007)
+New Revision: 572
+
+Modified:
+   dreamchess/branches/0.2/ChangeLog
+Log:
+	* Updated ChangeLog.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov 18 04:39:45 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 18 Nov 2007 04:39:45 +0100
+Subject: [dreamchess-svn-commits] r573 - dreamchess/tags
+Message-ID: <200711180339.lAI3djqP032454@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-18 04:39:44 +0100 (Sun, 18 Nov 2007)
+New Revision: 573
+
+Added:
+   dreamchess/tags/0.2.0/
+Log:
+	* Tagged 0.2.0.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov 18 05:03:50 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 18 Nov 2007 05:03:50 +0100
+Subject: [dreamchess-svn-commits] r574 - dreamchess/trunk/src/dreamer
+Message-ID: <200711180403.lAI43oR2000486@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-18 05:03:47 +0100 (Sun, 18 Nov 2007)
+New Revision: 574
+
+Modified:
+   dreamchess/trunk/src/dreamer/commands.c
+   dreamchess/trunk/src/dreamer/dreamer.c
+   dreamchess/trunk/src/dreamer/dreamer.h
+   dreamchess/trunk/src/dreamer/search.c
+Log:
+	* src/dreamer/commands.c, src/dreamer/search.c, src/dreamer/dreamer.c,
+	src/dreamer/dreamer.h: Added support for time control.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov 18 06:04:30 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 18 Nov 2007 06:04:30 +0100
+Subject: [dreamchess-svn-commits] r575 - dreamchess/branches/0.2/src/ui_sdlgl
+Message-ID: <200711180504.lAI54UiK002585@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-18 06:04:28 +0100 (Sun, 18 Nov 2007)
+New Revision: 575
+
+Modified:
+   dreamchess/branches/0.2/src/ui_sdlgl/ui_sdlgl_3d.c
+Log:
+	* src/ui_sdlgl/ui_sdlgl_3d.c: Fixed a) 2D board being too dark; and
+	b) white board and pieces when starting with 2D theme.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov 18 06:37:46 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 18 Nov 2007 06:37:46 +0100
+Subject: [dreamchess-svn-commits] r576 -
+	dreamchess/branches/0.2/data/boards/flat
+Message-ID: <200711180537.lAI5bklj023829@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-18 06:37:44 +0100 (Sun, 18 Nov 2007)
+New Revision: 576
+
+Modified:
+   dreamchess/branches/0.2/data/boards/flat/board.png
+Log:
+	* data/boards/flat/board.png: Made board darker.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov 18 12:50:13 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 18 Nov 2007 12:50:13 +0100
+Subject: [dreamchess-svn-commits] r577 - dreamchess/branches/0.2
+Message-ID: <200711181150.lAIBoD5c010815@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-18 12:50:12 +0100 (Sun, 18 Nov 2007)
+New Revision: 577
+
+Modified:
+   dreamchess/branches/0.2/ChangeLog
+Log:
+	* ChangeLog: Updated.
+
+
+
+
+
+From waltervn at berlios.de  Mon Nov 19 22:49:21 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 19 Nov 2007 22:49:21 +0100
+Subject: [dreamchess-svn-commits] r578 - dreamchess/tags
+Message-ID: <200711192149.lAJLnL5N014294@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-19 22:49:21 +0100 (Mon, 19 Nov 2007)
+New Revision: 578
+
+Removed:
+   dreamchess/tags/0.2.0/
+Log:
+	* Untagged 0.2.0.
+
+
+
+
+
+From waltervn at berlios.de  Mon Nov 19 22:50:15 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 19 Nov 2007 22:50:15 +0100
+Subject: [dreamchess-svn-commits] r579 - dreamchess/tags
+Message-ID: <200711192150.lAJLoFPp014400@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-19 22:50:15 +0100 (Mon, 19 Nov 2007)
+New Revision: 579
+
+Added:
+   dreamchess/tags/0.2.0/
+Log:
+	* Retagged 0.2.0.
+
+
+
+
+
+From waltervn at berlios.de  Thu Nov 22 01:53:00 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 22 Nov 2007 01:53:00 +0100
+Subject: [dreamchess-svn-commits] r580 - dreamchess/trunk/src/dreamer
+Message-ID: <200711220053.lAM0r04D022614@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-22 01:52:54 +0100 (Thu, 22 Nov 2007)
+New Revision: 580
+
+Modified:
+   dreamchess/trunk/src/dreamer/Makefile.am
+   dreamchess/trunk/src/dreamer/board.c
+   dreamchess/trunk/src/dreamer/commands.c
+   dreamchess/trunk/src/dreamer/dreamer.c
+   dreamchess/trunk/src/dreamer/dreamer.h
+   dreamchess/trunk/src/dreamer/gen_chess_moves.c
+   dreamchess/trunk/src/dreamer/history.c
+   dreamchess/trunk/src/dreamer/history.h
+   dreamchess/trunk/src/dreamer/move.h
+   dreamchess/trunk/src/dreamer/search.c
+   dreamchess/trunk/src/dreamer/transposition.c
+   dreamchess/trunk/src/dreamer/transposition.h
+Log:
+	* First batch of speedup attempts.
+
+
+
+
+
+From waltervn at berlios.de  Sat Nov 24 03:52:54 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 24 Nov 2007 03:52:54 +0100
+Subject: [dreamchess-svn-commits] r581 - dreamchess/trunk/src/dreamer
+Message-ID: <200711240252.lAO2qsPw005447@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-24 03:52:50 +0100 (Sat, 24 Nov 2007)
+New Revision: 581
+
+Modified:
+   dreamchess/trunk/src/dreamer/commands.c
+   dreamchess/trunk/src/dreamer/dreamer.c
+   dreamchess/trunk/src/dreamer/dreamer.h
+   dreamchess/trunk/src/dreamer/eval.c
+   dreamchess/trunk/src/dreamer/eval.h
+   dreamchess/trunk/src/dreamer/repetition.c
+   dreamchess/trunk/src/dreamer/search.c
+   dreamchess/trunk/src/dreamer/search.h
+   dreamchess/trunk/src/dreamer/transposition.c
+   dreamchess/trunk/src/dreamer/transposition.h
+Log:
+	* Made transposition table larger.
+
+
+
+
+
+From waltervn at berlios.de  Sat Nov 24 19:20:12 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 24 Nov 2007 19:20:12 +0100
+Subject: [dreamchess-svn-commits] r582 - dreamchess/trunk/src/dreamer
+Message-ID: <200711241820.lAOIKCrQ002426@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-24 19:19:56 +0100 (Sat, 24 Nov 2007)
+New Revision: 582
+
+Modified:
+   dreamchess/trunk/src/dreamer/eval.c
+   dreamchess/trunk/src/dreamer/history.c
+   dreamchess/trunk/src/dreamer/search.c
+   dreamchess/trunk/src/dreamer/transposition.c
+   dreamchess/trunk/src/dreamer/transposition.h
+Log:
+	* Use PV for move ordering.
+
+
+
+
+
+From waltervn at berlios.de  Sun Nov 25 04:53:22 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sun, 25 Nov 2007 04:53:22 +0100
+Subject: [dreamchess-svn-commits] r583 - dreamchess/trunk/src/dreamer
+Message-ID: <200711250353.lAP3rMZo002063@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-25 04:53:16 +0100 (Sun, 25 Nov 2007)
+New Revision: 583
+
+Modified:
+   dreamchess/trunk/src/dreamer/board.c
+   dreamchess/trunk/src/dreamer/board.h
+   dreamchess/trunk/src/dreamer/commands.c
+   dreamchess/trunk/src/dreamer/dreamer.c
+   dreamchess/trunk/src/dreamer/dreamer.h
+   dreamchess/trunk/src/dreamer/history.c
+   dreamchess/trunk/src/dreamer/history.h
+   dreamchess/trunk/src/dreamer/move.c
+   dreamchess/trunk/src/dreamer/move.h
+   dreamchess/trunk/src/dreamer/repetition.c
+   dreamchess/trunk/src/dreamer/repetition.h
+   dreamchess/trunk/src/dreamer/search.c
+   dreamchess/trunk/src/dreamer/transposition.c
+   dreamchess/trunk/src/dreamer/transposition.h
+Log:
+	* src/dreamer: Moves are now integers.
+
+
+
+
+
+From waltervn at berlios.de  Mon Nov 26 23:20:33 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 26 Nov 2007 23:20:33 +0100
+Subject: [dreamchess-svn-commits] r584 - dreamchess/trunk/src/dreamer
+Message-ID: <200711262220.lAQMKXlZ031435@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-26 23:20:26 +0100 (Mon, 26 Nov 2007)
+New Revision: 584
+
+Modified:
+   dreamchess/trunk/src/dreamer/board.c
+   dreamchess/trunk/src/dreamer/board.h
+   dreamchess/trunk/src/dreamer/commands.c
+   dreamchess/trunk/src/dreamer/dreamer.c
+   dreamchess/trunk/src/dreamer/dreamer.h
+   dreamchess/trunk/src/dreamer/history.c
+   dreamchess/trunk/src/dreamer/history.h
+   dreamchess/trunk/src/dreamer/move.c
+   dreamchess/trunk/src/dreamer/move.h
+   dreamchess/trunk/src/dreamer/repetition.c
+   dreamchess/trunk/src/dreamer/search.c
+   dreamchess/trunk/src/dreamer/transposition.c
+   dreamchess/trunk/src/dreamer/transposition.h
+Log:
+	* Changed move generation and time controls.
+
+
+
+
+
+From waltervn at berlios.de  Wed Nov 28 21:14:09 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Wed, 28 Nov 2007 21:14:09 +0100
+Subject: [dreamchess-svn-commits] r585 - dreamchess/trunk/src/dreamer
+Message-ID: <200711282014.lASKE99Y031670@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-28 21:14:05 +0100 (Wed, 28 Nov 2007)
+New Revision: 585
+
+Modified:
+   dreamchess/trunk/src/dreamer/commands.c
+   dreamchess/trunk/src/dreamer/commands.h
+   dreamchess/trunk/src/dreamer/dreamer.c
+   dreamchess/trunk/src/dreamer/dreamer.h
+   dreamchess/trunk/src/dreamer/search.c
+   dreamchess/trunk/src/dreamer/search.h
+   dreamchess/trunk/src/dreamer/transposition.c
+   dreamchess/trunk/src/dreamer/transposition.h
+Log:
+	* src/dreamer: Added pondering.
+
+
+
+
+
+From waltervn at berlios.de  Thu Nov 29 01:31:55 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 29 Nov 2007 01:31:55 +0100
+Subject: [dreamchess-svn-commits] r586 - dreamchess/trunk/src/dreamer
+Message-ID: <200711290031.lAT0Vtgq032333@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-11-29 01:31:53 +0100 (Thu, 29 Nov 2007)
+New Revision: 586
+
+Modified:
+   dreamchess/trunk/src/dreamer/repetition.c
+Log:
+	* src/dreamer/repetition.c: Fixed bug in repetition detection.
+
+
+
+
+

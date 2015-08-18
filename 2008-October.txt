@@ -1,0 +1,20 @@
+From waltervn at berlios.de  Mon Oct 20 20:03:41 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 20 Oct 2008 20:03:41 +0200
+Subject: [dreamchess-svn-commits] r647 - dreamchess/trunk/src/macosx
+Message-ID: <200810201803.m9KI3f8F030911@sheep.berlios.de>
+
+Author: krismca
+Date: 2008-10-20 20:03:38 +0200 (Mon, 20 Oct 2008)
+New Revision: 647
+
+Modified:
+   dreamchess/trunk/src/macosx/Info.plist.in
+   dreamchess/trunk/src/macosx/makeapp.pl
+Log:
+	* Added copyright notice to macosx info.plist.
+
+
+
+
+

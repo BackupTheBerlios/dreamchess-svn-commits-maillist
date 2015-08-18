@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [dreamchess-svn-commits] r476 - in dreamchess/trunk: . src	src/audio src/dreamer src/gamegui_dialogs src/include	src/include/gamegui src/libs src/libs/gamegui src/ui_sdlgl
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/dreamchess-svn-commits/2007-September/index.html" >
+   <LINK REL="made" HREF="mailto:dreamchess-svn-commits%40lists.berlios.de?Subject=Re%3A%20%5Bdreamchess-svn-commits%5D%20r476%20-%20in%20dreamchess/trunk%3A%20.%20src%0A%09src/audio%20src/dreamer%20src/gamegui_dialogs%20src/include%0A%09src/include/gamegui%20src/libs%20src/libs/gamegui%20src/ui_sdlgl&In-Reply-To=%3C200709111626.l8BGQ1g3025333%40sheep.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000035.html">
+   <LINK REL="Next"  HREF="000037.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[dreamchess-svn-commits] r476 - in dreamchess/trunk: . src	src/audio src/dreamer src/gamegui_dialogs src/include	src/include/gamegui src/libs src/libs/gamegui src/ui_sdlgl</H1>
+    <B>DreamChess SVN Repository</B> 
+    <A HREF="mailto:dreamchess-svn-commits%40lists.berlios.de?Subject=Re%3A%20%5Bdreamchess-svn-commits%5D%20r476%20-%20in%20dreamchess/trunk%3A%20.%20src%0A%09src/audio%20src/dreamer%20src/gamegui_dialogs%20src/include%0A%09src/include/gamegui%20src/libs%20src/libs/gamegui%20src/ui_sdlgl&In-Reply-To=%3C200709111626.l8BGQ1g3025333%40sheep.berlios.de%3E"
+       TITLE="[dreamchess-svn-commits] r476 - in dreamchess/trunk: . src	src/audio src/dreamer src/gamegui_dialogs src/include	src/include/gamegui src/libs src/libs/gamegui src/ui_sdlgl">waltervn at berlios.de
+       </A><BR>
+    <I>Tue Sep 11 18:26:01 CEST 2007</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000035.html">[dreamchess-svn-commits] r475 - music/trunk/data/music/matt_smith
+</A></li>
+        <LI>Next message: <A HREF="000037.html">[dreamchess-svn-commits] r477 - dreamchess/trunk
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#36">[ date ]</a>
+              <a href="thread.html#36">[ thread ]</a>
+              <a href="subject.html#36">[ subject ]</a>
+              <a href="author.html#36">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Author: waltervn
+Date: 2007-09-11 18:25:06 +0200 (Tue, 11 Sep 2007)
+New Revision: 476
+
+Added:
+   dreamchess/trunk/COPYRIGHT
+Removed:
+   dreamchess/trunk/src/include/mxml.h
+   dreamchess/trunk/src/libs/mxml/
+Modified:
+   dreamchess/trunk/AUTHORS
+   dreamchess/trunk/COPYING
+   dreamchess/trunk/NEWS
+   dreamchess/trunk/configure.ac
+   dreamchess/trunk/src/Makefile.am
+   dreamchess/trunk/src/audio/playlist.c
+   dreamchess/trunk/src/audio/playlist.h
+   dreamchess/trunk/src/audio/sdlmixer.c
+   dreamchess/trunk/src/board.c
+   dreamchess/trunk/src/board.h
+   dreamchess/trunk/src/comm.c
+   dreamchess/trunk/src/comm.h
+   dreamchess/trunk/src/comm_sdlthd.c
+   dreamchess/trunk/src/comm_unix.c
+   dreamchess/trunk/src/comm_win32.c
+   dreamchess/trunk/src/credits.c
+   dreamchess/trunk/src/credits.h
+   dreamchess/trunk/src/debug.c
+   dreamchess/trunk/src/debug.h
+   dreamchess/trunk/src/dir.c
+   dreamchess/trunk/src/dir.h
+   dreamchess/trunk/src/dreamchess.c
+   dreamchess/trunk/src/dreamchess.h
+   dreamchess/trunk/src/dreamer/board.c
+   dreamchess/trunk/src/dreamer/board.h
+   dreamchess/trunk/src/dreamer/commands.c
+   dreamchess/trunk/src/dreamer/commands.h
+   dreamchess/trunk/src/dreamer/dreamer.c
+   dreamchess/trunk/src/dreamer/dreamer.h
+   dreamchess/trunk/src/dreamer/e_comm.c
+   dreamchess/trunk/src/dreamer/e_comm.h
+   dreamchess/trunk/src/dreamer/e_comm_sdlthd.c
+   dreamchess/trunk/src/dreamer/e_comm_unix.c
+   dreamchess/trunk/src/dreamer/e_comm_win32.c
+   dreamchess/trunk/src/dreamer/eval.c
+   dreamchess/trunk/src/dreamer/eval.h
+   dreamchess/trunk/src/dreamer/gen_chess_moves.c
+   dreamchess/trunk/src/dreamer/hashing.c
+   dreamchess/trunk/src/dreamer/hashing.h
+   dreamchess/trunk/src/dreamer/history.c
+   dreamchess/trunk/src/dreamer/history.h
+   dreamchess/trunk/src/dreamer/main.c
+   dreamchess/trunk/src/dreamer/move.c
+   dreamchess/trunk/src/dreamer/move.h
+   dreamchess/trunk/src/dreamer/move_data.h
+   dreamchess/trunk/src/dreamer/repetition.c
+   dreamchess/trunk/src/dreamer/repetition.h
+   dreamchess/trunk/src/dreamer/search.c
+   dreamchess/trunk/src/dreamer/search.h
+   dreamchess/trunk/src/dreamer/transposition.c
+   dreamchess/trunk/src/dreamer/transposition.h
+   dreamchess/trunk/src/fen.c
+   dreamchess/trunk/src/fen.h
+   dreamchess/trunk/src/gamegui_dialogs/ingame_dialog.c
+   dreamchess/trunk/src/gamegui_dialogs/message_dialog.c
+   dreamchess/trunk/src/gamegui_dialogs/quit_dialog.c
+   dreamchess/trunk/src/gamegui_dialogs/styles.c
+   dreamchess/trunk/src/gamegui_dialogs/system_dialog.c
+   dreamchess/trunk/src/history.c
+   dreamchess/trunk/src/history.h
+   dreamchess/trunk/src/include/Makefile.am
+   dreamchess/trunk/src/include/audio.h
+   dreamchess/trunk/src/include/engine.h
+   dreamchess/trunk/src/include/gamegui.h
+   dreamchess/trunk/src/include/gamegui/action.h
+   dreamchess/trunk/src/include/gamegui/align.h
+   dreamchess/trunk/src/include/gamegui/bin.h
+   dreamchess/trunk/src/include/gamegui/box.h
+   dreamchess/trunk/src/include/gamegui/clipping.h
+   dreamchess/trunk/src/include/gamegui/container.h
+   dreamchess/trunk/src/include/gamegui/dialog.h
+   dreamchess/trunk/src/include/gamegui/entry.h
+   dreamchess/trunk/src/include/gamegui/frame.h
+   dreamchess/trunk/src/include/gamegui/hbox.h
+   dreamchess/trunk/src/include/gamegui/image.h
+   dreamchess/trunk/src/include/gamegui/label.h
+   dreamchess/trunk/src/include/gamegui/option.h
+   dreamchess/trunk/src/include/gamegui/select.h
+   dreamchess/trunk/src/include/gamegui/seperatorh.h
+   dreamchess/trunk/src/include/gamegui/seperatorv.h
+   dreamchess/trunk/src/include/gamegui/signal.h
+   dreamchess/trunk/src/include/gamegui/system.h
+   dreamchess/trunk/src/include/gamegui/vbox.h
+   dreamchess/trunk/src/include/gamegui/viewport.h
+   dreamchess/trunk/src/include/gamegui/widget.h
+   dreamchess/trunk/src/include/gamegui_dialogs.h
+   dreamchess/trunk/src/include/main_sdlthd.h
+   dreamchess/trunk/src/include/pipe_mem.h
+   dreamchess/trunk/src/include/pipe_unix.h
+   dreamchess/trunk/src/include/pipe_win32.h
+   dreamchess/trunk/src/include/san.h
+   dreamchess/trunk/src/include/theme.h
+   dreamchess/trunk/src/libs/Makefile.am
+   dreamchess/trunk/src/libs/gamegui/action.c
+   dreamchess/trunk/src/libs/gamegui/align.c
+   dreamchess/trunk/src/libs/gamegui/bin.c
+   dreamchess/trunk/src/libs/gamegui/box.c
+   dreamchess/trunk/src/libs/gamegui/clipping.c
+   dreamchess/trunk/src/libs/gamegui/container.c
+   dreamchess/trunk/src/libs/gamegui/dialog.c
+   dreamchess/trunk/src/libs/gamegui/entry.c
+   dreamchess/trunk/src/libs/gamegui/frame.c
+   dreamchess/trunk/src/libs/gamegui/hbox.c
+   dreamchess/trunk/src/libs/gamegui/image.c
+   dreamchess/trunk/src/libs/gamegui/label.c
+   dreamchess/trunk/src/libs/gamegui/option.c
+   dreamchess/trunk/src/libs/gamegui/select.c
+   dreamchess/trunk/src/libs/gamegui/seperatorh.c
+   dreamchess/trunk/src/libs/gamegui/seperatorv.c
+   dreamchess/trunk/src/libs/gamegui/signal.c
+   dreamchess/trunk/src/libs/gamegui/system.c
+   dreamchess/trunk/src/libs/gamegui/vbox.c
+   dreamchess/trunk/src/libs/gamegui/viewport.c
+   dreamchess/trunk/src/libs/gamegui/widget.c
+   dreamchess/trunk/src/libs/msgbuf.c
+   dreamchess/trunk/src/libs/msgbuf.h
+   dreamchess/trunk/src/libs/msglist.c
+   dreamchess/trunk/src/libs/msglist.h
+   dreamchess/trunk/src/libs/pipe_beos.c
+   dreamchess/trunk/src/libs/pipe_mem.c
+   dreamchess/trunk/src/libs/pipe_unix.c
+   dreamchess/trunk/src/libs/pipe_win32.c
+   dreamchess/trunk/src/libs/san_parse.y
+   dreamchess/trunk/src/main.c
+   dreamchess/trunk/src/main_sdlthd.c
+   dreamchess/trunk/src/pgn_parser.y
+   dreamchess/trunk/src/pgn_scanner.l
+   dreamchess/trunk/src/theme.c
+   dreamchess/trunk/src/ui.c
+   dreamchess/trunk/src/ui.h
+   dreamchess/trunk/src/ui_sdlgl/colours.c
+   dreamchess/trunk/src/ui_sdlgl/credits.c
+   dreamchess/trunk/src/ui_sdlgl/draw_scene.c
+   dreamchess/trunk/src/ui_sdlgl/draw_shape.c
+   dreamchess/trunk/src/ui_sdlgl/gamegui_driver.c
+   dreamchess/trunk/src/ui_sdlgl/get_move.c
+   dreamchess/trunk/src/ui_sdlgl/ingame_ui.c
+   dreamchess/trunk/src/ui_sdlgl/load_data.c
+   dreamchess/trunk/src/ui_sdlgl/matrix.c
+   dreamchess/trunk/src/ui_sdlgl/matrix.h
+   dreamchess/trunk/src/ui_sdlgl/promote_dialog.c
+   dreamchess/trunk/src/ui_sdlgl/saveload_dc.c
+   dreamchess/trunk/src/ui_sdlgl/saveload_dialog.c
+   dreamchess/trunk/src/ui_sdlgl/system.c
+   dreamchess/trunk/src/ui_sdlgl/text.c
+   dreamchess/trunk/src/ui_sdlgl/texture.c
+   dreamchess/trunk/src/ui_sdlgl/theme.c
+   dreamchess/trunk/src/ui_sdlgl/title_dialog.c
+   dreamchess/trunk/src/ui_sdlgl/transitions.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl.h
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.c
+   dreamchess/trunk/src/ui_sdlgl/ui_sdlgl_3d.h
+   dreamchess/trunk/src/ui_sdlgl/victory_dialog.c
+   dreamchess/trunk/src/ui_sdlgl/vkeyboard.c
+   dreamchess/trunk/src/ui_sdlgl/xmlsavefile.c
+Log:
+	* Switched to GPL v3. Updated headers and other meta data. Removed
+	mxml.
+
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000035.html">[dreamchess-svn-commits] r475 - music/trunk/data/music/matt_smith
+</A></li>
+	<LI>Next message: <A HREF="000037.html">[dreamchess-svn-commits] r477 - dreamchess/trunk
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#36">[ date ]</a>
+              <a href="thread.html#36">[ thread ]</a>
+              <a href="subject.html#36">[ subject ]</a>
+              <a href="author.html#36">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/dreamchess-svn-commits">More information about the dreamchess-svn-commits
+mailing list</a><br>
+</body></html>

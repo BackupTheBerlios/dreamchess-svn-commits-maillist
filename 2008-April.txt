@@ -1,0 +1,61 @@
+From waltervn at berlios.de  Fri Apr  4 01:59:55 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 4 Apr 2008 01:59:55 +0200
+Subject: [dreamchess-svn-commits] r619 - in dreamchess/trunk/src: .
+	gamegui_dialogs include include/gamegui libs/gamegui ui_sdlgl
+Message-ID: <200804032359.m33NxtDI002863@sheep.berlios.de>
+
+Author: waltervn
+Date: 2008-04-04 01:59:52 +0200 (Fri, 04 Apr 2008)
+New Revision: 619
+
+Added:
+   dreamchess/trunk/src/gamegui_dialogs/chat.c
+   dreamchess/trunk/src/include/gamegui/edit.h
+   dreamchess/trunk/src/libs/gamegui/edit.c
+Modified:
+   dreamchess/trunk/src/board.h
+   dreamchess/trunk/src/gamegui_dialogs/Makefile.am
+   dreamchess/trunk/src/include/gamegui.h
+   dreamchess/trunk/src/include/gamegui/Makefile.am
+   dreamchess/trunk/src/include/gamegui_dialogs.h
+   dreamchess/trunk/src/libs/gamegui/Makefile.am
+   dreamchess/trunk/src/ui_sdlgl/title_dialog.c
+Log:
+	* src/include/gamegui/edit.h, src/libs/gamegui/edit.c: Added.
+	* src/include/gamegui.h, src/include/gamegui/Makefile.am,
+	src/libs/gamegui/Makefile.am: Start of edit widget.
+
+	* src/gamegui_dialogs/chat.c, src/gamegui_dialogs/Makefile.am,
+	src/include/gamegui_dialogs.h, src/ui_sdlgl/title_dialog.c: Start of
+	chat dialog.
+
+
+
+
+
+From waltervn at berlios.de  Sat Apr  5 03:07:12 2008
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 5 Apr 2008 03:07:12 +0200
+Subject: [dreamchess-svn-commits] r620 - in dreamchess/trunk/src:
+	gamegui_dialogs include/gamegui libs/gamegui
+Message-ID: <200804050107.m3517CVa012478@sheep.berlios.de>
+
+Author: waltervn
+Date: 2008-04-05 03:07:10 +0200 (Sat, 05 Apr 2008)
+New Revision: 620
+
+Modified:
+   dreamchess/trunk/src/gamegui_dialogs/chat.c
+   dreamchess/trunk/src/include/gamegui/edit.h
+   dreamchess/trunk/src/include/gamegui/entry.h
+   dreamchess/trunk/src/include/gamegui/widget.h
+   dreamchess/trunk/src/libs/gamegui/edit.c
+   dreamchess/trunk/src/libs/gamegui/entry.c
+Log:
+	* More work on the chat window.
+
+
+
+
+

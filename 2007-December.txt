@@ -1,0 +1,105 @@
+From waltervn at berlios.de  Sat Dec  1 02:12:50 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 1 Dec 2007 02:12:50 +0100
+Subject: [dreamchess-svn-commits] r587 - dreamchess/trunk/src/dreamer
+Message-ID: <200712010112.lB11CoGQ017381@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-12-01 02:12:46 +0100 (Sat, 01 Dec 2007)
+New Revision: 587
+
+Added:
+   dreamchess/trunk/src/dreamer/pgn_parser.y
+   dreamchess/trunk/src/dreamer/pgn_scanner.l
+   dreamchess/trunk/src/dreamer/san.h
+Modified:
+   dreamchess/trunk/src/dreamer/Makefile.am
+   dreamchess/trunk/src/dreamer/hashing.c
+   dreamchess/trunk/src/dreamer/search.c
+Log:
+	* src/dreamer/: Removed in-check test. Added PGN and SAN code.
+
+
+
+
+
+From waltervn at berlios.de  Mon Dec  3 04:39:18 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Mon, 3 Dec 2007 04:39:18 +0100
+Subject: [dreamchess-svn-commits] r588 - dreamchess/trunk/src/dreamer
+Message-ID: <200712030339.lB33dIGi022129@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-12-03 04:39:14 +0100 (Mon, 03 Dec 2007)
+New Revision: 588
+
+Added:
+   dreamchess/trunk/src/dreamer/makebook.c
+   dreamchess/trunk/src/dreamer/makebook.h
+Modified:
+   dreamchess/trunk/src/dreamer/Makefile.am
+   dreamchess/trunk/src/dreamer/board.c
+   dreamchess/trunk/src/dreamer/board.h
+   dreamchess/trunk/src/dreamer/commands.c
+   dreamchess/trunk/src/dreamer/commands.h
+   dreamchess/trunk/src/dreamer/dreamer.c
+   dreamchess/trunk/src/dreamer/dreamer.h
+   dreamchess/trunk/src/dreamer/history.c
+   dreamchess/trunk/src/dreamer/main.c
+   dreamchess/trunk/src/dreamer/move.c
+   dreamchess/trunk/src/dreamer/move.h
+   dreamchess/trunk/src/dreamer/pgn_parser.y
+   dreamchess/trunk/src/dreamer/search.c
+Log:
+	* Added SAN support. Breaks pondering.
+
+
+
+
+
+From waltervn at berlios.de  Tue Dec  4 00:40:23 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 4 Dec 2007 00:40:23 +0100
+Subject: [dreamchess-svn-commits] r589 - dreamchess/trunk/src/dreamer
+Message-ID: <200712032340.lB3NeNaB001744@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-12-04 00:40:14 +0100 (Tue, 04 Dec 2007)
+New Revision: 589
+
+Modified:
+   dreamchess/trunk/src/dreamer/commands.c
+   dreamchess/trunk/src/dreamer/commands.h
+   dreamchess/trunk/src/dreamer/dreamer.c
+   dreamchess/trunk/src/dreamer/dreamer.h
+   dreamchess/trunk/src/dreamer/search.c
+Log:
+	* src/dreamer/: Fixed pondering bug caused by previous commit.
+
+
+
+
+
+From waltervn at berlios.de  Tue Dec  4 05:25:21 2007
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 4 Dec 2007 05:25:21 +0100
+Subject: [dreamchess-svn-commits] r590 - dreamchess/trunk/src/dreamer
+Message-ID: <200712040425.lB44PLJU012695@sheep.berlios.de>
+
+Author: waltervn
+Date: 2007-12-04 05:25:18 +0100 (Tue, 04 Dec 2007)
+New Revision: 590
+
+Modified:
+   dreamchess/trunk/src/dreamer/commands.c
+   dreamchess/trunk/src/dreamer/commands.h
+   dreamchess/trunk/src/dreamer/dreamer.c
+   dreamchess/trunk/src/dreamer/dreamer.h
+   dreamchess/trunk/src/dreamer/search.c
+Log:
+	* src/dreamer/: Added support for SAN notation in thinking output.
+
+
+
+
+

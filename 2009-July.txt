@@ -1,0 +1,215 @@
+From waltervn at berlios.de  Fri Jul 10 08:13:50 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 10 Jul 2009 08:13:50 +0200
+Subject: [dreamchess-svn-commits] r688 - in
+	dreamchess/branches/0.3-experimental: data/scripts
+	src/libs/engine src/libs/md3
+Message-ID: <200907100613.n6A6DokO025365@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-07-10 08:13:45 +0200 (Fri, 10 Jul 2009)
+New Revision: 688
+
+Added:
+   dreamchess/branches/0.3-experimental/data/scripts/game.lua
+Removed:
+   dreamchess/branches/0.3-experimental/src/libs/engine/mesh.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/mesh.h
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/main.lua
+   dreamchess/branches/0.3-experimental/data/scripts/scene.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/md3.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.cpp
+   dreamchess/branches/0.3-experimental/src/libs/md3/convert.cpp
+Log:
+	* Added initial game scene in LUA.
+
+
+
+
+
+From waltervn at berlios.de  Fri Jul 10 08:36:33 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 10 Jul 2009 08:36:33 +0200
+Subject: [dreamchess-svn-commits] r689 -
+	dreamchess/branches/0.3-experimental/data/scripts
+Message-ID: <200907100636.n6A6aXXJ027164@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-07-10 08:36:30 +0200 (Fri, 10 Jul 2009)
+New Revision: 689
+
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/game.lua
+   dreamchess/branches/0.3-experimental/data/scripts/scene.lua
+Log:
+	* Scene LUA script handles duplicate entity names now.
+
+
+
+
+
+From waltervn at berlios.de  Tue Jul 14 09:44:47 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 14 Jul 2009 09:44:47 +0200
+Subject: [dreamchess-svn-commits] r690 - in
+	dreamchess/branches/0.3-experimental: data/scripts src/libs/engine
+Message-ID: <200907140744.n6E7ilpQ007592@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-07-14 09:44:42 +0200 (Tue, 14 Jul 2009)
+New Revision: 690
+
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/chess_piece.lua
+   dreamchess/branches/0.3-experimental/data/scripts/entity.lua
+   dreamchess/branches/0.3-experimental/data/scripts/game.lua
+   dreamchess/branches/0.3-experimental/data/scripts/main.lua
+   dreamchess/branches/0.3-experimental/data/scripts/scene.lua
+   dreamchess/branches/0.3-experimental/data/scripts/title.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.h
+Log:
+	* Added 'chess_board' entity in Lua, added 'draw_quad' to screen.cpp.
+
+
+
+
+
+From waltervn at berlios.de  Tue Jul 14 10:19:24 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 14 Jul 2009 10:19:24 +0200
+Subject: [dreamchess-svn-commits] r691 - in
+	dreamchess/branches/0.3-experimental: data/scripts src/libs/engine
+Message-ID: <200907140819.n6E8JOOW023944@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-07-14 10:19:19 +0200 (Tue, 14 Jul 2009)
+New Revision: 691
+
+Added:
+   dreamchess/branches/0.3-experimental/data/scripts/chess_board.lua
+   dreamchess/branches/0.3-experimental/data/scripts/init.lua
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/game.lua
+   dreamchess/branches/0.3-experimental/data/scripts/main.lua
+   dreamchess/branches/0.3-experimental/data/scripts/title.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/input.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/input.h
+Log:
+	* Added 'wait for release' to keyboard input. 
+	  Moved	repetitive init code from title.lua and 
+	  game.lua into init.lua.
+
+
+
+
+
+From waltervn at berlios.de  Tue Jul 14 11:08:43 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Tue, 14 Jul 2009 11:08:43 +0200
+Subject: [dreamchess-svn-commits] r692 - in
+	dreamchess/branches/0.3-experimental: data/scripts src/libs/engine
+Message-ID: <200907140908.n6E98hA4028659@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-07-14 11:08:39 +0200 (Tue, 14 Jul 2009)
+New Revision: 692
+
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/chess_board.lua
+   dreamchess/branches/0.3-experimental/data/scripts/entity.lua
+   dreamchess/branches/0.3-experimental/data/scripts/game.lua
+   dreamchess/branches/0.3-experimental/data/scripts/init.lua
+   dreamchess/branches/0.3-experimental/data/scripts/scene.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/input.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/input.h
+Log:
+	* Initial mouse support added.
+
+
+
+
+
+From waltervn at berlios.de  Thu Jul 16 10:28:28 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Thu, 16 Jul 2009 10:28:28 +0200
+Subject: [dreamchess-svn-commits] r693 - in
+	dreamchess/branches/0.3-experimental: data/scripts src/libs/engine
+Message-ID: <200907160828.n6G8SSDe025524@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-07-16 10:28:22 +0200 (Thu, 16 Jul 2009)
+New Revision: 693
+
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/chess_board.lua
+   dreamchess/branches/0.3-experimental/data/scripts/chess_piece.lua
+   dreamchess/branches/0.3-experimental/data/scripts/entity.lua
+   dreamchess/branches/0.3-experimental/data/scripts/game.lua
+   dreamchess/branches/0.3-experimental/data/scripts/main.lua
+   dreamchess/branches/0.3-experimental/data/scripts/scene.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/dcm.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/input.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/input.h
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.h
+Log:
+	* Chess pieces interact with the mouse now.
+
+
+
+
+
+From waltervn at berlios.de  Fri Jul 17 04:29:30 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Fri, 17 Jul 2009 04:29:30 +0200
+Subject: [dreamchess-svn-commits] r694 - in
+	dreamchess/branches/0.3-experimental: data/scripts src/libs/engine
+Message-ID: <200907170229.n6H2TUTI028008@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-07-17 04:29:25 +0200 (Fri, 17 Jul 2009)
+New Revision: 694
+
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/chess_piece.lua
+   dreamchess/branches/0.3-experimental/data/scripts/class.lua
+   dreamchess/branches/0.3-experimental/data/scripts/entity.lua
+   dreamchess/branches/0.3-experimental/data/scripts/game.lua
+   dreamchess/branches/0.3-experimental/data/scripts/scene.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/dcm.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/input.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/input.h
+Log:
+	* Improved mouse code, changed the board angle/position some.
+
+
+
+
+
+From waltervn at berlios.de  Sat Jul 18 08:08:28 2009
+From: waltervn at berlios.de (DreamChess SVN Repository)
+Date: Sat, 18 Jul 2009 08:08:28 +0200
+Subject: [dreamchess-svn-commits] r695 - in
+	dreamchess/branches/0.3-experimental: data/scripts src/libs/engine
+Message-ID: <200907180608.n6I68STJ008009@sheep.berlios.de>
+
+Author: krismca
+Date: 2009-07-18 08:08:24 +0200 (Sat, 18 Jul 2009)
+New Revision: 695
+
+Modified:
+   dreamchess/branches/0.3-experimental/data/scripts/chess_piece.lua
+   dreamchess/branches/0.3-experimental/data/scripts/class.lua
+   dreamchess/branches/0.3-experimental/data/scripts/entity.lua
+   dreamchess/branches/0.3-experimental/data/scripts/scene.lua
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.cpp
+   dreamchess/branches/0.3-experimental/src/libs/engine/screen.h
+Log:
+	* Minor tweaks.
+
+
+
+
+
